@@ -61,6 +61,24 @@ namespace controleDespesa.Exceptions {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A descrição da despesa, não pode ser vazio..
+        /// </summary>
+        public static string DESCRICAO_DESPESA_VAZIO {
+            get {
+                return ResourceManager.GetString("DESCRICAO_DESPESA_VAZIO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A descrição da Receita, não pode ser vazio..
+        /// </summary>
+        public static string DESCRICAO_RECEITA_VAZIO {
+            get {
+                return ResourceManager.GetString("DESCRICAO_RECEITA_VAZIO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Esse e-mail, não é um e-mail valido.
         /// </summary>
         public static string EMAIL_INVALIDO {
@@ -93,6 +111,33 @@ namespace controleDespesa.Exceptions {
         public static string SENHA_CURTA {
             get {
                 return ResourceManager.GetString("SENHA_CURTA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Por favor, selecione um tipo de Despesa..
+        /// </summary>
+        public static string TIPO_DESPESA_INVALIDO {
+            get {
+                return ResourceManager.GetString("TIPO_DESPESA_INVALIDO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Por favor selecionar um tipo de receita..
+        /// </summary>
+        public static string TIPO_RECEITA_INVALIDO {
+            get {
+                return ResourceManager.GetString("TIPO_RECEITA_INVALIDO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O valor da despesa tem que ser maior do que 0.
+        /// </summary>
+        public static string VALOR_DESPESA_INVALIDO {
+            get {
+                return ResourceManager.GetString("VALOR_DESPESA_INVALIDO", resourceCulture);
             }
         }
     }

@@ -1,17 +1,15 @@
-﻿using controleDespesa.Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace controleDespesa.Application.DTOs
+namespace controleDespesa.Domain.Entities
 {
-    public class ReceitaDTO
+    public class Receita
     {
-
         public int Id { get; set; }
-
+        
         public decimal Valor { get; set; }
 
         public string Descricao { get; set; } = string.Empty;
@@ -22,7 +20,10 @@ namespace controleDespesa.Application.DTOs
 
         public int TipoDespesaReceitaId { get; set; }
 
-        public TipoDespesaReceita TipoReceita { get; set; } = null!;
+        public TipoDespesaReceita TipoDespesaReceita { get; set; } = null!;
+
+
+
 
     }
 }

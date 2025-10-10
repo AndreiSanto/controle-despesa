@@ -1,0 +1,13 @@
+[2025-10-10 13:28:57 INF] Now listening on: https://localhost:7056
+[2025-10-10 13:28:57 INF] Now listening on: http://localhost:5039
+[2025-10-10 13:28:57 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-10 13:28:57 INF] Hosting environment: Development
+[2025-10-10 13:28:57 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-10 13:29:08 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-10 13:29:09 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-10 13:29:10 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-10 13:29:10 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1953.6573ms
+[2025-10-10 13:29:10 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 208.3326ms
+[2025-10-10 13:29:11 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1012.4442ms
+[2025-10-10 13:29:11 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-10 13:29:11 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.7139ms

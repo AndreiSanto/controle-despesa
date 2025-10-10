@@ -16,6 +16,10 @@ namespace controleDespesa.Infrastructure.Data
             
         }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Receita> Receitas { get; set; }
+        public DbSet<TipoDespesaReceita> TipoDespesaReceitas { get; set; }
+        public DbSet<DespesaParcela> DespesaParcelas { get; set; }
+        public DbSet<Despesa> Despesas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
