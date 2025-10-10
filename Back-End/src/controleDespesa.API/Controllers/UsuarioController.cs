@@ -1,5 +1,6 @@
 ﻿using controleDespesa.Application.DTOs;
 using controleDespesa.Application.Service;
+using controleDespesa.Application.Service.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
@@ -10,19 +11,19 @@ namespace controleDespesa.API.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        private readonly UsuarioAppService _usuarioAppService;
+        private readonly IUsuarioAppService _usuarioAppService;
 
-        public UsuarioController(UsuarioAppService usuarioAppService)
+        public UsuarioController(IUsuarioAppService usuarioAppService)
         {
             this._usuarioAppService = usuarioAppService;
         }
 
         [HttpPost("Cadastro")]
-        public IActionResult Cadastrar([FromBody] UsuarioDTO usuario)
+        public async Task<IActionResult> Cadastrar([FromBody] UsuarioDTO usuario)
         {
             try
             {
-                var usuarioNovo = _usuarioAppService.Cadastrar(usuario);
+                var usuarioNovo = await _usuarioAppService.Cadastrar(usuario);
 
                
                 return Created(string.Empty, usuarioNovo);

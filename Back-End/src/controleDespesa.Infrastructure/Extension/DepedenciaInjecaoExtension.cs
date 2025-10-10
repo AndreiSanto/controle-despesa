@@ -1,4 +1,5 @@
-﻿using controleDespesa.Domain.Repositorys.Usuario.Interface;
+﻿using controleDespesa.Domain.Interface;
+using controleDespesa.Domain.Repositorys.Usuario.Interface;
 using controleDespesa.Infrastructure.Data;
 using controleDespesa.Infrastructure.Data.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -35,6 +36,7 @@ namespace controleDespesa.Infrastructure.Extension
         private static void AddRepositories(IServiceCollection services) {
 
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 
         }

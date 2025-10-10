@@ -5,6 +5,7 @@ using Serilog;
 using controleDespesa.Infrastructure;
 using controleDespesa.Infrastructure.Extension;
 using controleDespesa.Application.Extension;
+using controleDespesa.Infrastructure.Migration;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -55,6 +56,17 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+
 app.MapControllers();
 
+MigrateDatabase();
+
 app.Run();
+
+void MigrateDatabase()
+{
+
+    var conexao = builder.Configuration.GetConnectionString("DefaultConnection");
+    DatabaseMigration.Migrate(conexao);
+
+}

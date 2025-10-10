@@ -14,9 +14,13 @@ namespace controleDespesa.Infrastructure.Data.Repository
         private readonly ApiContext _apiContext;
 
         public UsuarioRepository(ApiContext apiContext) => _apiContext = apiContext;
-       
 
-    public async Task Add(Usuario usuario) => await _apiContext.Usuarios.AddAsync(usuario);
+
+        public async Task Add(Usuario usuario)
+        {
+
+            await _apiContext.Usuarios.AddAsync(usuario);
+        }
 
         public async Task<bool> ExisteEmailCadastrado(string email)
         {
