@@ -1,4 +1,5 @@
-﻿using System;
+﻿using controleDespesa.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace controleDespesa.Application.DTOs
 
         public int Id { get; set; }
 
-        public string Descrição { get; set; } = string.Empty;
+        public string Descricao { get; set; } = string.Empty;
 
         public decimal ValorDespesa { get; set; }
 
@@ -19,11 +20,14 @@ namespace controleDespesa.Application.DTOs
 
         public DateTime? DataVencimento { get; set; }
 
-        public int? NumeroParcela { get; set; }
+        public int NumeroDeParcela { get; set; }
+
+        public bool Parcelado { get; set; }
 
         public bool DespesaFixa { get; set; } = false;
 
         public int TipoDespesaReceitaId { get; set; }
+
 
 
     }

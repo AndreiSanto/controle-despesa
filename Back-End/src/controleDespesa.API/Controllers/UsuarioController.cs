@@ -41,15 +41,6 @@ namespace controleDespesa.API.Controllers
             }
         }
 
-        /*  public IActionResult Cadastro()
-          {
-              var novoItem = new
-              {
-                  Id = Guid.NewGuid(),
-                  Nome = "Mouse Gamer",
-                  Preco = 150.00m
-              };
-              return Created(string.Empty,novoItem);
-          }*/
+        
     }
 }

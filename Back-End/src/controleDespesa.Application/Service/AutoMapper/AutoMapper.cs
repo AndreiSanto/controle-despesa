@@ -18,6 +18,14 @@ namespace controleDespesa.Application.Service.AutoMapper
                 .ForMember(dest => dest.DataCriacao, opt => opt.Ignore())
                 .ForMember(dest => dest.Ativo, opt => opt.Ignore());
 
+
+            CreateMap<DespesaDTO, Despesa>()
+     .ForMember(dest => dest.DespesaParcela, opt => opt.Ignore())
+     .ForMember(dest => dest.TipoDespesaReceita, opt => opt.Ignore());
+
+
+            
+
         }
     }
 }

@@ -1,4 +1,7 @@
 ﻿using controleDespesa.Domain.Interface;
+using controleDespesa.Domain.Repositorys.Despesa.Interface;
+using controleDespesa.Domain.Repositorys.Receita.Interface;
+using controleDespesa.Domain.Repositorys.TipoDespesaReceita;
 using controleDespesa.Domain.Repositorys.Usuario.Interface;
 using controleDespesa.Infrastructure.Data;
 using controleDespesa.Infrastructure.Data.Repository;
@@ -36,6 +39,9 @@ namespace controleDespesa.Infrastructure.Extension
         private static void AddRepositories(IServiceCollection services) {
 
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IDespesaRepository, DespesaRepository>();
+            services.AddScoped<ITipoDespesaReceitaRepository, TipoDespesaReceitaRepository>();
+            services.AddScoped<IReceitaRepository, ReceitaRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 

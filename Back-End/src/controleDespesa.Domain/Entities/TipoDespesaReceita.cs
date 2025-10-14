@@ -1,4 +1,5 @@
-﻿using System;
+﻿using controleDespesa.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,8 @@ namespace controleDespesa.Domain.Entities
         public DateTime DataCadastro { get; set; } = DateTime.UtcNow;
 
         public bool Ativo { get; set; } = true;
+
+        public TipoDespesaReceitaEnum Tipo { get; set; }
 
         public ICollection<Despesa> Despesas { get; set; }
         public ICollection<Receita> Receitas { get; set; }

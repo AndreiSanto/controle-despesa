@@ -8,7 +8,7 @@ namespace controleDespesa.Domain.Enums
 {
     public enum TipoDespesaReceitaEnum : byte
     {
-        RECEITA =1,
+        RECEITA = 1,
         DESPESA = 2
     }
 }

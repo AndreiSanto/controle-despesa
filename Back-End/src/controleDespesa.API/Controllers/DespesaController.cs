@@ -1,7 +1,6 @@
 ﻿using controleDespesa.Application.DTOs;
 using controleDespesa.Application.Service;
 using controleDespesa.Application.Service.Interfaces;
-using controleDespesa.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
@@ -10,26 +9,25 @@ namespace controleDespesa.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class ReceitaController : ControllerBase
+    public class DespesaController : ControllerBase
     {
-        private readonly IReceitaAppService _receitaAppService;
+        private readonly IDespesaAppService _despesaAppService;
 
-        public ReceitaController(IReceitaAppService receitaAppService)
+        public DespesaController(IDespesaAppService despesaAppService)
         {
-            _receitaAppService = receitaAppService;
+            _despesaAppService = despesaAppService;
         }
 
         [HttpPost]
-       
-        public async Task<IActionResult> Cadastrar([FromBody] ReceitaDTO receitaDTO)
+        public async Task<IActionResult> Cadastrar([FromBody] DespesaDTO despesaDTO)
         {
-            
+
 
             try
             {
-                var receita = await _receitaAppService.Cadastro(receitaDTO);
+                var despesa = await _despesaAppService.Cadastro(despesaDTO);
 
-                return Created(string.Empty, receita);
+                return Created(string.Empty, despesa);
             }
             catch (ValidationException ex)
             {
@@ -40,10 +38,8 @@ namespace controleDespesa.API.Controllers
             {
 
                 return StatusCode(StatusCodes.Status500InternalServerError,
-                    new { Erro = "Ocorreu um erro ao cadastrar uma receita.", Detalhes = ex.Message });
+                    new { Erro = "Ocorreu um erro ao cadastrar uma despesa.", Detalhes = ex.Message });
             }
         }
     }
-
-    }
-
+}

@@ -1,7 +1,6 @@
 ﻿using controleDespesa.Application.DTOs;
 using controleDespesa.Application.Service;
 using controleDespesa.Application.Service.Interfaces;
-using controleDespesa.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
@@ -10,26 +9,25 @@ namespace controleDespesa.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class ReceitaController : ControllerBase
+    public class TipoDespesaReceitaController : ControllerBase
     {
-        private readonly IReceitaAppService _receitaAppService;
+        private readonly ITipoDespesaReceitaAppService _tipoDespesaReceita;
 
-        public ReceitaController(IReceitaAppService receitaAppService)
+        public TipoDespesaReceitaController(ITipoDespesaReceitaAppService tipoDespesaReceita)
         {
-            _receitaAppService = receitaAppService;
+            _tipoDespesaReceita = tipoDespesaReceita;
         }
 
         [HttpPost]
-       
-        public async Task<IActionResult> Cadastrar([FromBody] ReceitaDTO receitaDTO)
+        public async Task<IActionResult> Cadastrar([FromBody] TipoDespesaReceitaDTO tipoDespesaReceitaDTO)
         {
-            
+
 
             try
             {
-                var receita = await _receitaAppService.Cadastro(receitaDTO);
+                var tipoDespesaReceita = await _tipoDespesaReceita.Cadastro(tipoDespesaReceitaDTO);
 
-                return Created(string.Empty, receita);
+                return Created(string.Empty, tipoDespesaReceita);
             }
             catch (ValidationException ex)
             {
@@ -44,6 +42,4 @@ namespace controleDespesa.API.Controllers
             }
         }
     }
-
-    }
-
+}

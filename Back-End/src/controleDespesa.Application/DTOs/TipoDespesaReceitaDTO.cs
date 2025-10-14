@@ -1,4 +1,5 @@
-﻿using System;
+﻿using controleDespesa.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,5 +17,7 @@ namespace controleDespesa.Application.DTOs
         public DateTime DataCadastro { get; set; }
 
         public bool Ativo { get; set; }
+
+        public TipoDespesaReceitaEnum TipoDespesaReceitaEnum { get; set; }
     }
 }
