@@ -1,0 +1,12 @@
+<p-carousel [value]="slides">
+  <ng-template pTemplate="item" let-slide>
+    <div class="onboard-slide">
+      <h2>{{ slide.title }}</h2>
+      <p>{{ slide.text }}</p>
+    </div>
+  </ng-template>
+</p-carousel>
+
+<div class="onboard-actions">
+  <button pButton label="Continuar" (click)="goToApp()"></button>
+</div>

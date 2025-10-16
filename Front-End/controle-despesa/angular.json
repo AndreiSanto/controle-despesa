@@ -3,18 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "controle-despesas": {
+    "controle-despesa": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss",
-          "standalone": false
-        },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
-          "standalone": false
+          "style": "scss"
         }
       },
       "root": "",
@@ -24,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/controle-despesas",
+            "outputPath": "dist/controle-despesa",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -37,6 +30,9 @@
               "src/assets"
             ],
             "styles": [
+               "node_modules/primeicons/primeicons.css", 
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css", 
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -69,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "controle-despesas:build:production"
+              "buildTarget": "controle-despesa:build:production"
             },
             "development": {
-              "buildTarget": "controle-despesas:build:development"
+              "buildTarget": "controle-despesa:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "controle-despesas:build"
+            "buildTarget": "controle-despesa:build"
           }
         },
         "test": {
@@ -97,27 +93,18 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/primeicons/primeicons.css", 
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css", 
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.scss"
             ],
             "scripts": []
-          }
-        },
-        "lint": {
-          "builder": "@angular-eslint/builder:lint",
-          "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
           }
         }
       }
     }
   },
   "cli": {
-    "analytics": false,
-    "schematicCollections": [
-      "angular-eslint"
-    ]
+    "analytics": false
   }
 }

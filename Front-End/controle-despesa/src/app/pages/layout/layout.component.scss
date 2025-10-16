@@ -1,0 +1,36 @@
+/* Faz o menubar ficar fixo no topo */
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Menubar fixo */
+p-menubar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Área do conteúdo principal */
+.content {
+  margin-top: 70px; /* espaço pra não ficar atrás do menubar */
+  padding: 1.5rem;
+  background-color: #f5f6fa;
+  flex: 1;
+  overflow-y: auto; /* rolagem se o conteúdo for grande */
+}
+
+/* Ajuste opcional: deixa o body sem margens */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+:host ::ng-deep .p-menubar .menu-right {
+  margin-left: auto !important;
+}
+
