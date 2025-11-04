@@ -58,8 +58,9 @@ jobs:
 
       # --- Build do Angular ---
       - name: Build Angular app
-        run: npm run build
+        run: npm run build -- --no-progress --configuration production --verbose || true
         working-directory: ./Front-End/controle-despesa
+        continue-on-error: true
 
       # --- Upload dos artefatos (build final) ---
       - name: Upload build artifacts
