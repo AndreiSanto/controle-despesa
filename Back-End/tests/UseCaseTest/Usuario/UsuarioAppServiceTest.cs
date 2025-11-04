@@ -16,7 +16,7 @@ namespace AppServiceTest.Usuario
 {
     public class UsuarioAppServiceTest
     {
-        [Fact]
+        [Fact(DisplayName ="Criação do Usuario")]
         public  async Task Sucesso()
         {
 
