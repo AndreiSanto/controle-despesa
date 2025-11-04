@@ -34,7 +34,7 @@ jobs:
       # --- Testes do backend (opcional) ---
       - name: Test .NET API
         run: dotnet test --no-build --verbosity normal
-        working-directory: ./Back-End
+        working-directory: ./Back-End/tests
 
       # --- Publica o backend ---
       - name: Publish .NET API
