@@ -31,14 +31,10 @@ jobs:
         run: dotnet build --configuration Release --no-restore
         working-directory: ./Back-End
 
-      # --- Testes do backend ---
-      - name: Run .NET tests
-        run: |
-          cd ./Back-End/tests/Validacao.Test
-          dotnet test --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx" || true
-          cd ../UseCaseTest
-          dotnet test --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx" || true
-        continue-on-error: false
+      # --- Testes do backend (opcional) ---
+      - name: Test .NET API
+        run: dotnet test --no-build --verbosity normal
+        working-directory: ./Back-End/tests
 
       # --- Publica o backend ---
       - name: Publish .NET API
@@ -58,9 +54,8 @@ jobs:
 
       # --- Build do Angular ---
       - name: Build Angular app
-        run: npm run build -- --no-progress --configuration production --verbose || true
+        run: npm run build
         working-directory: ./Front-End/controle-despesa
-        continue-on-error: true
 
       # --- Upload dos artefatos (build final) ---
       - name: Upload build artifacts
