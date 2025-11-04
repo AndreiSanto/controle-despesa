@@ -33,15 +33,10 @@ jobs:
 
       # --- Testes do backend ---
       - name: Run .NET tests
-        run: dotnet test ./Back-End/ControleDespesa.sln --no-build --logger "trx;LogFileName=test-results.trx" || true
-
-      # --- Upload dos resultados dos testes (sempre roda, mesmo se falhar) ---
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-results
-          path: '**/*.trx'
+        run: |
+          dotnet test ./Back-End/tests/Validacao.Test/Validacao.Test.csproj --no-build --verbosity normal
+          dotnet test ./Back-End/tests/UseCaseTest/AppServiceTest.csproj --no-build --verbosity normal
+        continue-on-error: false
 
       # --- Publica o backend ---
       - name: Publish .NET API
@@ -64,7 +59,7 @@ jobs:
         run: npm run build
         working-directory: ./Front-End/controle-despesa
 
-      # --- Upload dos artefatos (build final .NET + Angular) ---
+      # --- Upload dos artefatos (build final) ---
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
