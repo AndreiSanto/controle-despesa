@@ -38,7 +38,7 @@ jobs:
 
       # --- Publica o backend ---
       - name: Publish .NET API
-        run: dotnet publish ./Back-End/ControleDespesa.Api/ControleDespesa.Api.csproj --configuration Release --output ./Back-End/publish
+        run: dotnet publish ./Back-End/ControleDespesa.Api.csproj --configuration Release --output ./Back-End/publish
 
       # --- Configura Node.js para o Angular ---
       - name: Setup Node.js
