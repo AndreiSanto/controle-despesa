@@ -1,0 +1,63 @@
+<div class="card">
+  <h2>Meta de Despesa do Mês</h2>
+
+  <form (ngSubmit)="salvar()" #formMeta="ngForm" class="form-container">
+
+    <!-- Mês e Ano -->
+    <div class="form-group-row">
+      <div class="form-group half-width">
+        <label for="mes">Mês</label>
+        <p-dropdown
+          [options]="meses"
+          [(ngModel)]="meta.mes"
+          name="mes"
+          optionLabel="label"
+          optionValue="value"
+          placeholder="Selecione o mês"
+           [disabled]="true"
+          >
+        </p-dropdown>
+      </div>
+
+      <div class="form-group half-width">
+        <label for="ano">Ano</label>
+        <input type="number" id="ano" name="ano"
+               [(ngModel)]="meta.ano"
+               min="2000"
+               max="2100"
+               required  [disabled]="true">
+      </div>
+    </div>
+
+    <!-- Valor da Meta -->
+    <div class="form-group">
+      <label for="valorMeta">Valor da Meta (R$)</label>
+      <p-inputNumber
+        [(ngModel)]="meta.valorMeta"
+        name="valorMeta"
+        mode="currency"
+        currency="BRL"
+        locale="pt-BR"
+        [minFractionDigits]="2"
+        required>
+      </p-inputNumber>
+    </div>
+
+    <!-- Barra de Progresso -->
+    <div class="form-group">
+      <label>Progresso do Gasto</label>
+      <p-progressBar [value]="progresso" [showValue]="true"></p-progressBar>
+      <p *ngIf="progresso >= 100" style="color: red; margin-top: 8px;">
+        ⚠️ Atenção: Você atingiu ou ultrapassou a meta!
+      </p>
+    </div>
+
+    <!-- Botões -->
+    <div style="display: flex; justify-content: space-between;">
+      <button type="button" class="btn-voltar" (click)="voltar()">Voltar</button>
+      <button type="submit" class="btn-salvar">Salvar Meta</button>
+    </div>
+  </form>
+</div>
+
+<p-toast></p-toast>

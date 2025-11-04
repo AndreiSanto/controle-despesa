@@ -1,0 +1,174 @@
+[2025-10-08 13:32:56 INF] Now listening on: https://localhost:7056
+[2025-10-08 13:32:56 INF] Now listening on: http://localhost:5039
+[2025-10-08 13:32:56 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-08 13:32:56 INF] Hosting environment: Development
+[2025-10-08 13:32:56 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-08 13:33:04 INF] Request starting HTTP/2 GET https://localhost:7056/swagger - null null
+[2025-10-08 13:33:04 INF] Request finished HTTP/2 GET https://localhost:7056/swagger - 301 0 null 693.9888ms
+[2025-10-08 13:33:04 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-08 13:33:05 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 278.4617ms
+[2025-10-08 13:33:05 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/swagger-ui.css - null null
+[2025-10-08 13:33:05 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-08 13:33:05 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/swagger-ui-bundle.js - null null
+[2025-10-08 13:33:05 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/swagger-ui-standalone-preset.js - null null
+[2025-10-08 13:33:05 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-08 13:33:05 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 85.268ms
+[2025-10-08 13:33:05 INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[2025-10-08 13:33:05 INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[2025-10-08 13:33:05 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/swagger-ui.css - 200 152034 text/css 599.0662ms
+[2025-10-08 13:33:05 INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[2025-10-08 13:33:05 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 601.3401ms
+[2025-10-08 13:33:05 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 613.0326ms
+[2025-10-08 13:33:05 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 659.5256ms
+[2025-10-08 13:33:06 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-08 13:33:06 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 192.9173ms
+[2025-10-08 13:49:06 INF] Now listening on: https://localhost:7056
+[2025-10-08 13:49:06 INF] Now listening on: http://localhost:5039
+[2025-10-08 13:49:07 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-08 13:49:07 INF] Hosting environment: Development
+[2025-10-08 13:49:07 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-08 13:49:08 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-08 13:49:10 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-08 13:49:10 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-08 13:49:11 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 2371.6879ms
+[2025-10-08 13:49:11 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 308.3504ms
+[2025-10-08 13:49:11 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 729.7914ms
+[2025-10-08 13:49:11 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-08 13:49:11 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.989ms
+[2025-10-08 13:50:03 INF] Request starting HTTP/2 POST https://localhost:7056/Usuario/Cadastro - application/json 80
+[2025-10-08 13:50:03 INF] Executing endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:50:03 INF] Route matched with {action = "Cadastrar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cadastrar(controleDespesa.Application.DTOs.UsuarioDTO) on controller controleDespesa.API.Controllers.UsuarioController (controleDespesa.API).
+[2025-10-08 13:50:06 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-08 13:50:06 INF] Executed action controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API) in 3155.7844ms
+[2025-10-08 13:50:06 INF] Executed endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:50:06 INF] Request finished HTTP/2 POST https://localhost:7056/Usuario/Cadastro - 500 null application/json; charset=utf-8 3405.4424ms
+[2025-10-08 13:50:25 INF] Request starting HTTP/2 POST https://localhost:7056/Usuario/Cadastro - application/json 80
+[2025-10-08 13:50:25 INF] Executing endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:50:25 INF] Route matched with {action = "Cadastrar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cadastrar(controleDespesa.Application.DTOs.UsuarioDTO) on controller controleDespesa.API.Controllers.UsuarioController (controleDespesa.API).
+[2025-10-08 13:50:40 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-08 13:50:40 INF] Executed action controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API) in 14720.2406ms
+[2025-10-08 13:50:40 INF] Executed endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:50:40 INF] Request finished HTTP/2 POST https://localhost:7056/Usuario/Cadastro - 500 null application/json; charset=utf-8 14793.8731ms
+[2025-10-08 13:51:05 INF] Request starting HTTP/2 POST https://localhost:7056/Usuario/Cadastro - application/json 98
+[2025-10-08 13:51:05 INF] Executing endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:51:05 INF] Route matched with {action = "Cadastrar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cadastrar(controleDespesa.Application.DTOs.UsuarioDTO) on controller controleDespesa.API.Controllers.UsuarioController (controleDespesa.API).
+[2025-10-08 13:52:26 INF] Now listening on: https://localhost:7056
+[2025-10-08 13:52:26 INF] Now listening on: http://localhost:5039
+[2025-10-08 13:52:26 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-08 13:52:27 INF] Hosting environment: Development
+[2025-10-08 13:52:27 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-08 13:52:29 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-08 13:52:30 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-08 13:52:30 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-08 13:52:30 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 131.7325ms
+[2025-10-08 13:52:30 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1880.8539ms
+[2025-10-08 13:52:31 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 382.8085ms
+[2025-10-08 13:52:31 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-08 13:52:31 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.7496ms
+[2025-10-08 13:57:24 INF] Request starting HTTP/2 POST https://localhost:7056/Usuario/Cadastro - application/json 78
+[2025-10-08 13:57:25 INF] Executing endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:57:25 INF] Route matched with {action = "Cadastrar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cadastrar(controleDespesa.Application.DTOs.UsuarioDTO) on controller controleDespesa.API.Controllers.UsuarioController (controleDespesa.API).
+[2025-10-08 13:57:31 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-08 13:57:31 INF] Executed action controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API) in 4940.1041ms
+[2025-10-08 13:57:31 INF] Executed endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:57:31 INF] Request finished HTTP/2 POST https://localhost:7056/Usuario/Cadastro - 500 null application/json; charset=utf-8 6094.3349ms
+[2025-10-08 13:57:56 INF] Request starting HTTP/2 POST https://localhost:7056/Usuario/Cadastro - application/json 72
+[2025-10-08 13:57:56 INF] Executing endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:57:56 INF] Route matched with {action = "Cadastrar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cadastrar(controleDespesa.Application.DTOs.UsuarioDTO) on controller controleDespesa.API.Controllers.UsuarioController (controleDespesa.API).
+[2025-10-08 13:57:56 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-08 13:57:56 INF] Executed action controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API) in 132.9964ms
+[2025-10-08 13:57:56 INF] Executed endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:57:56 INF] Request finished HTTP/2 POST https://localhost:7056/Usuario/Cadastro - 500 null application/json; charset=utf-8 224.4914ms
+[2025-10-08 13:58:32 INF] Request starting HTTP/2 POST https://localhost:7056/Usuario/Cadastro - application/json 89
+[2025-10-08 13:58:32 INF] Executing endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:58:32 INF] Route matched with {action = "Cadastrar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cadastrar(controleDespesa.Application.DTOs.UsuarioDTO) on controller controleDespesa.API.Controllers.UsuarioController (controleDespesa.API).
+[2025-10-08 13:58:32 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-08 13:58:32 INF] Executed action controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API) in 136.6234ms
+[2025-10-08 13:58:32 INF] Executed endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:58:32 INF] Request finished HTTP/2 POST https://localhost:7056/Usuario/Cadastro - 500 null application/json; charset=utf-8 438.9098ms
+[2025-10-08 13:58:42 INF] Request starting HTTP/2 POST https://localhost:7056/Usuario/Cadastro - application/json 93
+[2025-10-08 13:58:43 INF] Executing endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:58:43 INF] Route matched with {action = "Cadastrar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cadastrar(controleDespesa.Application.DTOs.UsuarioDTO) on controller controleDespesa.API.Controllers.UsuarioController (controleDespesa.API).
+[2025-10-08 13:58:43 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-08 13:58:43 INF] Executed action controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API) in 147.5141ms
+[2025-10-08 13:58:43 INF] Executed endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:58:43 INF] Request finished HTTP/2 POST https://localhost:7056/Usuario/Cadastro - 500 null application/json; charset=utf-8 241.4721ms
+[2025-10-08 13:59:12 INF] Request starting HTTP/2 POST https://localhost:7056/Usuario/Cadastro - application/json 93
+[2025-10-08 13:59:12 INF] Executing endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 13:59:12 INF] Route matched with {action = "Cadastrar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cadastrar(controleDespesa.Application.DTOs.UsuarioDTO) on controller controleDespesa.API.Controllers.UsuarioController (controleDespesa.API).
+[2025-10-08 14:02:13 INF] Now listening on: https://localhost:7056
+[2025-10-08 14:02:13 INF] Now listening on: http://localhost:5039
+[2025-10-08 14:02:13 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-08 14:02:13 INF] Hosting environment: Development
+[2025-10-08 14:02:13 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-08 14:02:14 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-08 14:02:15 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-08 14:02:15 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-08 14:02:15 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 683.7741ms
+[2025-10-08 14:02:15 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 36.3578ms
+[2025-10-08 14:02:15 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 253.3995ms
+[2025-10-08 14:02:15 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-08 14:02:15 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 112.596ms
+[2025-10-08 14:04:17 INF] Request starting HTTP/2 POST https://localhost:7056/Usuario/Cadastro - application/json 98
+[2025-10-08 14:04:17 INF] Executing endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 14:04:17 INF] Route matched with {action = "Cadastrar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cadastrar(controleDespesa.Application.DTOs.UsuarioDTO) on controller controleDespesa.API.Controllers.UsuarioController (controleDespesa.API).
+[2025-10-08 14:04:44 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-08 14:04:44 INF] Executed action controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API) in 27155.7224ms
+[2025-10-08 14:04:44 INF] Executed endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 14:04:44 INF] Request finished HTTP/2 POST https://localhost:7056/Usuario/Cadastro - 500 null application/json; charset=utf-8 27317.6511ms
+[2025-10-08 14:04:48 INF] Request starting HTTP/2 POST https://localhost:7056/Usuario/Cadastro - application/json 98
+[2025-10-08 14:04:48 INF] Executing endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 14:04:48 INF] Route matched with {action = "Cadastrar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cadastrar(controleDespesa.Application.DTOs.UsuarioDTO) on controller controleDespesa.API.Controllers.UsuarioController (controleDespesa.API).
+[2025-10-08 14:07:20 INF] Now listening on: https://localhost:7056
+[2025-10-08 14:07:20 INF] Now listening on: http://localhost:5039
+[2025-10-08 14:07:20 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-08 14:07:20 INF] Hosting environment: Development
+[2025-10-08 14:07:20 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-08 14:07:21 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-08 14:07:22 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1009.8449ms
+[2025-10-08 14:07:22 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-08 14:07:22 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-08 14:07:22 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 28.8956ms
+[2025-10-08 14:07:22 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 141.535ms
+[2025-10-08 14:07:22 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-08 14:07:22 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.2316ms
+[2025-10-08 14:08:16 INF] Request starting HTTP/2 POST https://localhost:7056/Usuario/Cadastro - application/json 98
+[2025-10-08 14:08:16 INF] Executing endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 14:08:16 INF] Route matched with {action = "Cadastrar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cadastrar(controleDespesa.Application.DTOs.UsuarioDTO) on controller controleDespesa.API.Controllers.UsuarioController (controleDespesa.API).
+[2025-10-08 14:08:42 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-08 14:08:42 INF] Executed action controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API) in 25881.5187ms
+[2025-10-08 14:08:42 INF] Executed endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 14:08:42 INF] Request finished HTTP/2 POST https://localhost:7056/Usuario/Cadastro - 500 null application/json; charset=utf-8 26018.8066ms
+[2025-10-08 14:11:39 INF] Now listening on: https://localhost:7056
+[2025-10-08 14:11:39 INF] Now listening on: http://localhost:5039
+[2025-10-08 14:11:39 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-08 14:11:39 INF] Hosting environment: Development
+[2025-10-08 14:11:39 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-08 14:11:40 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-08 14:11:40 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-08 14:11:40 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-08 14:11:41 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 850.8955ms
+[2025-10-08 14:11:41 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 32.2213ms
+[2025-10-08 14:11:41 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 122.7456ms
+[2025-10-08 14:11:41 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-08 14:11:41 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 123.308ms
+[2025-10-08 14:13:00 INF] Request starting HTTP/2 POST https://localhost:7056/Usuario/Cadastro - application/json 98
+[2025-10-08 14:13:00 INF] Executing endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 14:13:00 INF] Route matched with {action = "Cadastrar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cadastrar(controleDespesa.Application.DTOs.UsuarioDTO) on controller controleDespesa.API.Controllers.UsuarioController (controleDespesa.API).
+[2025-10-08 14:14:37 INF] Executing CreatedResult, writing value of type 'controleDespesa.Domain.Entities.Usuario'.
+[2025-10-08 14:14:37 INF] Executed action controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API) in 96983.5649ms
+[2025-10-08 14:14:37 INF] Executed endpoint 'controleDespesa.API.Controllers.UsuarioController.Cadastrar (controleDespesa.API)'
+[2025-10-08 14:14:37 INF] Request finished HTTP/2 POST https://localhost:7056/Usuario/Cadastro - 201 null application/json; charset=utf-8 97131.7462ms
+[2025-10-08 16:17:45 INF] Now listening on: https://localhost:7056
+[2025-10-08 16:17:45 INF] Now listening on: http://localhost:5039
+[2025-10-08 16:17:45 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-08 16:17:45 INF] Hosting environment: Development
+[2025-10-08 16:17:45 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-08 16:17:47 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-08 16:17:47 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 581.6715ms
+[2025-10-08 16:17:47 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-08 16:17:47 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 20.3081ms
+[2025-10-08 16:17:48 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-08 16:17:48 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 212.4584ms
+[2025-10-08 16:17:48 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-08 16:17:48 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 50.8521ms

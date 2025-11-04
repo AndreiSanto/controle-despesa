@@ -1,0 +1,55 @@
+<p-toast></p-toast>
+
+<div class="card">
+
+  <button type="button" class="btn-voltar" *ngIf="formType === FormType.Update || formType === FormType.View"
+    (click)="voltar()">
+    Voltar
+  </button>
+  <h2>{{ tituloPagina }}</h2>
+
+
+
+  <form (ngSubmit)="salvar()" #formreceita="ngForm" class="form-container">
+
+    <!-- Descrição -->
+    <div class="form-group">
+      <label for="descricao">Descrição</label>
+      <input type="text" id="descricao" name="descricao" [disabled]="formType === 'view'"
+        [(ngModel)]="receita.descricao" required />
+    </div>
+
+    <!-- Valor + Tipo lado a lado -->
+    <div class="form-group-row">
+      <div class="form-group half-width">
+        <label for="valorreceita">Valor da Receita (R$)</label>
+        <p-inputNumber [(ngModel)]="receita.valor" name="valor" mode="currency" currency="BRL" locale="pt-BR"
+          [minFractionDigits]="2" inputId="valorreceita" [disabled]="formType === 'view'"></p-inputNumber>
+      </div>
+
+      <div class="form-group half-width">
+        <label for="tipoReceita">Tipo de Receita</label>
+        <p-dropdown id="tipoReceita" [options]="tipoReceitas" [(ngModel)]="receita.tipoDespesaReceitaId"
+          name="tipoDespesaReceitaId" optionLabel="nome" optionValue="id" placeholder="Selecione o tipo"
+          emptyMessage="Nenhum dado" [disabled]="formType === 'view'"></p-dropdown>
+      </div>
+    </div>
+
+    <!-- Checkbox Receita Fixa -->
+    <div class="form-check">
+      <input type="checkbox" id="receitaFixa" name="receitaFixa" [disabled]="formType === 'view'"
+        [(ngModel)]="receita.receitaFixa" (change)="onReceitaChange()" />
+      <label for="receitaFixa">Receita Fixa</label>
+    </div>
+
+    <button type="submit" class="btn-salvar" [disabled]="formType === 'view'">Cadastrar</button>
+  </form>
+</div>
+
+<!-- Modal informativo -->
+<p-dialog header="Informação" [(visible)]="displayModal" [modal]="true" [closable]="true" [dismissableMask]="true">
+  <p>Ao selecionar uma receita fixa, ela será adicionada automaticamente todo mês a partir da data de cadastro.</p>
+  <p-footer>
+    <button type="button" pButton label="Fechar" (click)="fecharModal()"></button>
+  </p-footer>
+</p-dialog>

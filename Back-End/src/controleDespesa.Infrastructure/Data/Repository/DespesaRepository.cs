@@ -1,0 +1,66 @@
+﻿using controleDespesa.Communication.Response;
+using controleDespesa.Communication.Response.Despesa;
+using controleDespesa.Domain.Entities;
+using controleDespesa.Domain.Repositorys.Despesa.Interface;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace controleDespesa.Infrastructure.Data.Repository
+{
+    public class DespesaRepository : IDespesaRepository
+    {
+
+        private readonly ApiContext _apiContext;
+
+        public DespesaRepository(ApiContext apiContext)
+        {
+            _apiContext = apiContext;
+        }
+
+        public async Task Add(Despesa despesa) => await _apiContext.Despesas.AddAsync(despesa);
+
+        public  void AtualizarAsync(Despesa despesa)
+        {
+              _apiContext.Despesas.Update(despesa);
+        }
+
+        public async Task<Despesa> BuscarDespesa(int id)
+        {
+            return await _apiContext.Despesas.FindAsync(id);
+        }
+
+        public async Task<RetornoPaginacao<Despesa>> DespesaLista(int pagina, int totalPatina)
+        {
+            return  await RetornoPaginacao<Despesa>.CriarAsync(pagina, totalPatina,  _apiContext.Despesas.AsQueryable());
+
+            
+        }
+
+        public async Task<bool> ExcluirAsync(int id)
+        {
+           var despesa = await _apiContext.Despesas.FindAsync(id);
+
+            if(despesa == null)
+            {
+                return false;
+            }
+             _apiContext.Despesas.Remove(despesa);
+            return true;
+        }
+
+        public async Task<List<TipoDespesaReceitaResponse>> ListarCategoriaReceita()
+        {
+            return await _apiContext.TipoDespesaReceitas.Where(b => b.Ativo && b.Tipo == Domain.Enums.TipoDespesaReceitaEnum.DESPESA)
+            .Select(a => new TipoDespesaReceitaResponse()
+            {
+                Id = a.Id,
+                Nome = a.Nome
+            }).ToListAsync();
+        }
+    }
+    
+}

@@ -1,0 +1,45 @@
+.dashboard {
+  padding: 1.5rem 2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+p-card {
+  flex: 1 1 250px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.positivo {
+  color: #4caf50;
+}
+
+.negativo {
+  color: #f44336;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.tabelas {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.tabelas > div {
+  flex: 1 1 400px;
+}
+
+/* 🔹 Meta */
+p-progressBar {
+  margin-top: 10px;
+  border-radius: 10px;
+}

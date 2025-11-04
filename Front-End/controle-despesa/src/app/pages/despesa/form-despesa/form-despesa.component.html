@@ -1,0 +1,52 @@
+<div class="card">
+
+    <button type="button" class="btn-voltar" *ngIf="formType === FormType.Update || formType === FormType.View"
+        (click)="voltar()">
+        Voltar
+    </button>
+    <h2>{{ tituloPagina }}</h2>
+    <form (ngSubmit)="salvar()" #formDespesa="ngForm" class="form-container">
+
+        <div class="form-group">
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" name="descricao" [(ngModel)]="despesa.descricao" required
+                [disabled]="formType === 'view'" />
+        </div>
+
+        <!-- Valor e Tipo lado a lado -->
+        <div class="form-group-row">
+            <div class="form-group half-width">
+                <label for="valorDespesa">Valor da Despesa (R$)</label>
+                <p-inputNumber [(ngModel)]="despesa.valorDespesa" name="valorDespesa" mode="currency" currency="BRL"
+                    locale="pt-BR" [minFractionDigits]="2" [disabled]="formType === 'view'"></p-inputNumber>
+            </div>
+
+            <div class="form-group half-width">
+                <label for="tipoDespesa">Tipo da Despesa</label>
+                <p-dropdown id="tipoDespesa" [options]="tipoDespesa" [(ngModel)]="despesa.tipoDespesaReceitaId"
+                    name="tipoDespesaReceitaId" optionLabel="nome" placeholder="Selecione o tipo" optionValue="id"
+                    [disabled]="formType === 'view'"></p-dropdown>
+            </div>
+        </div>
+
+        <!-- Exibe data de vencimento apenas se não for parcelado -->
+        <div class="form-group">
+            <label for="dataDespesa">Data da Despesa</label>
+            <p-calendar id="dataDespesa" name="dataDespesa" [(ngModel)]="despesa.dataDespesa"
+                dateFormat="dd/mm/yy" showIcon="true" [disabled]="formType === 'view'"></p-calendar>
+        </div>
+
+
+        <!-- Checkbox Despesa Fixa -->
+        <div class="form-check">
+            <input type="checkbox" id="despesaFixa" name="despesaFixa" [(ngModel)]="despesa.despesaFixa"
+                [disabled]="formType === 'view'" />
+            <label for="despesaFixa">Despesa Fixa</label>
+        </div>
+
+        <button type="submit" class="btn-salvar" [disabled]="formType === FormType.View">
+            Salvar
+        </button>
+    </form>
+</div>
+<p-toast></p-toast>

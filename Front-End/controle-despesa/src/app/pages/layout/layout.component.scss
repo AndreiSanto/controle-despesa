@@ -1,0 +1,49 @@
+/* Faz o menubar ficar fixo no topo */
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Menubar fixo */
+/* Menubar fixo, colado nas bordas */
+p-menubar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin: 0;
+  padding: 0; /* 👈 sem recuo lateral */
+  border-radius: 0;
+}
+
+/* Área do conteúdo principal */
+.content {
+  margin-top: 70px;
+  padding: 1.5rem 2rem; /* 👈 conteúdo continua com espaçamento interno */
+  background-color: #f5f6fa;
+  flex: 1;
+  overflow-y: auto;
+}
+
+
+/* Ajuste opcional: deixa o body sem margens */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+:host ::ng-deep .p-menubar .menu-right {
+  margin-left: auto !important;
+}
+
+::ng-deep .p-menuitem-badge {
+  margin-left: 6px;
+  background-color: #ff5252; /* vermelho de notificação */
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 0 6px;
+}

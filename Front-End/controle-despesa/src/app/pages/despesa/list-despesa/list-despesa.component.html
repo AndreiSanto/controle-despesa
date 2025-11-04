@@ -1,0 +1,66 @@
+<div class="card">
+    <h2>Listagem de Despesas</h2>
+
+    <!-- FILTROS -->
+    <div class="filtros">
+        <input pInputText type="text" placeholder="Descrição" [(ngModel)]="filtro.descricao" />
+        <p-calendar [(ngModel)]="filtro.dataVencimento" dateFormat="dd/mm/yy"
+            placeholder="Data de vencimento"></p-calendar>
+        <p-dropdown [options]="tiposDespesa" [(ngModel)]="filtro.despesaFixa" placeholder="Tipo" optionLabel="label"
+            optionValue="value">
+        </p-dropdown>
+
+        <p-button label="Buscar" icon="pi pi-search" (onClick)="buscar()"></p-button>
+    </div>
+
+    <!-- TABELA -->
+    <p-table [value]="despesas" [paginator]="true" [rows]="5" [rowsPerPageOptions]="[5,10,20]"
+        [responsiveLayout]="'scroll'" [totalRecords]="totalRecords" [lazy]="true" (onLazyLoad)="loadDespesas($event)"
+        [loading]="loading" [first]="first">
+
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Descrição</th>
+                <th>Valor (R$)</th>
+                <th>Data de Cadastro</th>
+                <th>Data de Vencimento</th>
+                <th>Despesa Fixa</th>
+                <th>Parcelado</th>
+                <th>Nº Parcelas</th>
+                <th style="text-align: center;">Ações</th>
+            </tr>
+        </ng-template>
+
+        <ng-template pTemplate="body" let-despesa>
+            <tr>
+                <td>{{ despesa.descricao }}</td>
+                <td>{{ despesa.valorDespesa | currency:'BRL' }}</td>
+                <td>{{ despesa.dataCadastro | date:'dd/MM/yyyy' }}</td>
+                <td>{{ despesa.dataVencimento | date:'dd/MM/yyyy' }}</td>
+                <td>{{ despesa.despesaFixa ? 'Sim' : 'Não' }}</td>
+                <td>{{ despesa.parcelado ? 'Sim' : 'Não' }}</td>
+                <td>
+                    {{ despesa.parcelado ? despesa.numeroParcelas : 'Nenhuma' }}
+                </td>
+                <td class="acoes">
+                    <p-button icon="pi pi-eye" class="p-button-rounded p-button-success p-button-sm"
+                        (onClick)="visualizar(despesa)"></p-button>
+                    <p-button icon="pi pi-pencil" class="p-button-rounded p-button-warning p-button-sm"
+                        (onClick)="editar(despesa)"></p-button>
+                    <p-button icon="pi pi-trash" class="p-button-rounded p-button-danger p-button-sm"
+                        (onClick)="excluir(despesa)"></p-button>
+                </td>
+            </tr>
+        </ng-template>
+
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="8" class="text-center" style="text-align:center; color: #888; padding: 1rem;">
+                    Nenhum dado encontrado.
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+
+<p-toast></p-toast>

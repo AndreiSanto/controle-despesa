@@ -1,0 +1,58 @@
+<div class="card">
+    <h2>Listagem de Receitas</h2>
+
+    <!-- FILTROS -->
+    <div class="filtros">
+        <input pInputText type="text" placeholder="Descrição" [(ngModel)]="filtro.descricao" />
+        <p-calendar [(ngModel)]="filtro.dataVencimento" dateFormat="dd/mm/yy"
+            placeholder="Data de vencimento"></p-calendar>
+        <p-dropdown [options]="tiposDespesa" [(ngModel)]="filtro.despesaFixa" placeholder="Tipo" optionLabel="label"
+            optionValue="value">
+        </p-dropdown>
+
+        <p-button label="Buscar" icon="pi pi-search" (onClick)="buscar()"></p-button>
+    </div>
+
+    <!-- TABELA -->
+    <p-table [value]="receitas" [paginator]="true" [rows]="5" [rowsPerPageOptions]="[5,10,20]"
+        [responsiveLayout]="'scroll'" [totalRecords]="totalRecords" [lazy]="true" (onLazyLoad)="loadReceitas($event)"
+        [loading]="loading" [first]="first">
+
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Descrição</th>
+                <th>Valor (R$)</th>
+                <th>Data de Cadastro</th>
+                <th>Tipo</th>
+                <th>Receita Fixa</th>
+               
+                <th style="text-align: center;">Ações</th>
+            </tr>
+        </ng-template>
+
+        <ng-template pTemplate="body" let-receita>
+            <tr>
+                <td>{{ receita.descricao }}</td>
+                <td>{{ receita.valor | currency:'BRL' }}</td>
+                <td>{{ receita.dataCadastro | date:'dd/MM/yyyy' }}</td>
+                <td>{{ receita.tipoDespesaReceita.nome}}</td>
+                <td>{{ receita.receitaFixa ? 'Sim' : 'Não' }}</td>
+                <td class="acoes">
+                    <p-button icon="pi pi-eye" class="p-button-rounded p-button-success p-button-sm"
+                        (onClick)="visualizar(receita)"></p-button>
+                    <p-button icon="pi pi-pencil" class="p-button-rounded p-button-warning p-button-sm"
+                        (onClick)="editar(receita)"></p-button>
+                    <p-button icon="pi pi-trash" class="p-button-rounded p-button-danger p-button-sm"
+                        (onClick)="excluir(receita)"></p-button>
+                </td>
+            </tr>
+        </ng-template>
+             <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="8" class="text-center" style="text-align:center; color: #888; padding: 1rem;">
+                    Nenhum dado encontrado.
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

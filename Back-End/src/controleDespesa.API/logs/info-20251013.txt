@@ -1,0 +1,234 @@
+[2025-10-13 16:08:23 INF] Now listening on: https://localhost:7056
+[2025-10-13 16:08:23 INF] Now listening on: http://localhost:5039
+[2025-10-13 16:08:23 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-13 16:08:23 INF] Hosting environment: Development
+[2025-10-13 16:08:23 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-13 16:08:29 INF] Request starting HTTP/2 GET https://localhost:7056/swagger - null null
+[2025-10-13 16:08:29 INF] Request finished HTTP/2 GET https://localhost:7056/swagger - 301 0 null 449.0365ms
+[2025-10-13 16:08:29 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-13 16:08:29 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 249.9571ms
+[2025-10-13 16:08:29 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/swagger-ui-standalone-preset.js - null null
+[2025-10-13 16:08:29 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-13 16:08:29 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/swagger-ui-bundle.js - null null
+[2025-10-13 16:08:29 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/swagger-ui.css - null null
+[2025-10-13 16:08:29 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-13 16:08:30 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 118.0747ms
+[2025-10-13 16:08:30 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 232.2605ms
+[2025-10-13 16:08:30 INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[2025-10-13 16:08:30 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/swagger-ui.css - 200 152034 text/css 285.9234ms
+[2025-10-13 16:08:30 INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[2025-10-13 16:08:30 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 322.7458ms
+[2025-10-13 16:08:31 INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[2025-10-13 16:08:31 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 1128.9235ms
+[2025-10-13 16:08:31 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-13 16:08:31 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/favicon-32x32.png - null null
+[2025-10-13 16:08:31 INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+[2025-10-13 16:08:31 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/favicon-32x32.png - 200 628 image/png 22.6677ms
+[2025-10-13 16:08:31 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.9706ms
+[2025-10-13 16:11:13 INF] Now listening on: https://localhost:7056
+[2025-10-13 16:11:13 INF] Now listening on: http://localhost:5039
+[2025-10-13 16:11:13 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-13 16:11:13 INF] Hosting environment: Development
+[2025-10-13 16:11:13 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-13 16:11:14 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-13 16:11:15 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-13 16:11:15 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-13 16:11:15 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 23.3647ms
+[2025-10-13 16:11:15 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 648.892ms
+[2025-10-13 16:11:16 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 852.4495ms
+[2025-10-13 16:11:16 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-13 16:11:16 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 149.4589ms
+[2025-10-13 16:13:15 INF] Request starting HTTP/2 POST https://localhost:7056/Despesa - application/json 280
+[2025-10-13 16:13:15 INF] Executing endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 16:13:15 INF] Route matched with {action = "Cadastrar", controller = "Despesa"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.DespesaDTO) on controller controleDespesa.API.Controllers.DespesaController (controleDespesa.API).
+[2025-10-13 16:13:15 INF] Executed action controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API) in 13.3019ms
+[2025-10-13 16:13:15 INF] Executed endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 16:13:15 ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'controleDespesa.Application.Service.DespesaAppService' while attempting to activate 'controleDespesa.API.Controllers.DespesaController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-10-13 16:13:15 INF] Request finished HTTP/2 POST https://localhost:7056/Despesa - 500 null text/plain; charset=utf-8 233.0275ms
+[2025-10-13 16:14:21 INF] Now listening on: https://localhost:7056
+[2025-10-13 16:14:22 INF] Now listening on: http://localhost:5039
+[2025-10-13 16:14:22 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-13 16:14:22 INF] Hosting environment: Development
+[2025-10-13 16:14:22 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-13 16:14:22 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-13 16:14:23 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-13 16:14:23 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-13 16:14:23 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 500.4533ms
+[2025-10-13 16:14:23 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 26.1605ms
+[2025-10-13 16:14:23 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 197.6902ms
+[2025-10-13 16:14:23 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-13 16:14:23 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 101.6819ms
+[2025-10-13 16:17:04 INF] Now listening on: https://localhost:7056
+[2025-10-13 16:17:04 INF] Now listening on: http://localhost:5039
+[2025-10-13 16:17:04 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-13 16:17:05 INF] Hosting environment: Development
+[2025-10-13 16:17:05 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-13 16:17:05 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-13 16:17:06 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-13 16:17:06 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-13 16:17:06 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 925.5301ms
+[2025-10-13 16:17:06 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 37.1151ms
+[2025-10-13 16:17:07 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 301.2866ms
+[2025-10-13 16:17:07 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-13 16:17:07 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 111.594ms
+[2025-10-13 16:18:15 INF] Request starting HTTP/2 POST https://localhost:7056/Despesa - application/json 279
+[2025-10-13 16:18:15 INF] Executing endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 16:18:15 INF] Route matched with {action = "Cadastrar", controller = "Despesa"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.DespesaDTO) on controller controleDespesa.API.Controllers.DespesaController (controleDespesa.API).
+[2025-10-13 16:18:15 INF] Executed action controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API) in 15.815ms
+[2025-10-13 16:18:15 INF] Executed endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 16:18:15 ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'controleDespesa.Application.Service.DespesaAppService' while attempting to activate 'controleDespesa.API.Controllers.DespesaController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-10-13 16:18:15 INF] Request finished HTTP/2 POST https://localhost:7056/Despesa - 500 null text/plain; charset=utf-8 324.2009ms
+[2025-10-13 16:18:18 INF] Request starting HTTP/2 POST https://localhost:7056/Despesa - application/json 279
+[2025-10-13 16:18:18 INF] Executing endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 16:18:18 INF] Route matched with {action = "Cadastrar", controller = "Despesa"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.DespesaDTO) on controller controleDespesa.API.Controllers.DespesaController (controleDespesa.API).
+[2025-10-13 16:18:18 INF] Executed action controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API) in 3.1654ms
+[2025-10-13 16:18:18 INF] Executed endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 16:18:18 ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'controleDespesa.Application.Service.DespesaAppService' while attempting to activate 'controleDespesa.API.Controllers.DespesaController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-10-13 16:18:18 INF] Request finished HTTP/2 POST https://localhost:7056/Despesa - 500 null text/plain; charset=utf-8 94.8388ms
+[2025-10-13 16:18:53 INF] Now listening on: https://localhost:7056
+[2025-10-13 16:18:53 INF] Now listening on: http://localhost:5039
+[2025-10-13 16:18:53 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-13 16:18:53 INF] Hosting environment: Development
+[2025-10-13 16:18:53 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-13 16:18:55 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-13 16:18:56 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 790.5409ms
+[2025-10-13 16:18:56 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-13 16:18:56 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-13 16:18:56 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 105.7244ms
+[2025-10-13 16:18:56 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 283.3745ms
+[2025-10-13 16:18:56 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-13 16:18:56 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.8589ms
+[2025-10-13 22:58:12 INF] Now listening on: https://localhost:7056
+[2025-10-13 22:58:12 INF] Now listening on: http://localhost:5039
+[2025-10-13 22:58:12 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-13 22:58:12 INF] Hosting environment: Development
+[2025-10-13 22:58:13 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-13 22:58:14 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-13 22:58:15 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-13 22:58:15 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-13 22:58:15 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 617.399ms
+[2025-10-13 22:58:15 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 54.6304ms
+[2025-10-13 22:58:16 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 603.2693ms
+[2025-10-13 22:58:16 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-13 22:58:16 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.0377ms
+[2025-10-13 23:00:15 INF] Request starting HTTP/2 POST https://localhost:7056/Despesa - application/json 279
+[2025-10-13 23:00:15 INF] Executing endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 23:00:15 INF] Route matched with {action = "Cadastrar", controller = "Despesa"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.DespesaDTO) on controller controleDespesa.API.Controllers.DespesaController (controleDespesa.API).
+[2025-10-13 23:00:15 INF] Executed action controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API) in 15.4906ms
+[2025-10-13 23:00:15 INF] Executed endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 23:00:15 ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'controleDespesa.Application.Service.DespesaAppService' while attempting to activate 'controleDespesa.API.Controllers.DespesaController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-10-13 23:00:15 INF] Request finished HTTP/2 POST https://localhost:7056/Despesa - 500 null text/plain; charset=utf-8 240.1403ms
+[2025-10-13 23:02:50 INF] Now listening on: https://localhost:7056
+[2025-10-13 23:02:50 INF] Now listening on: http://localhost:5039
+[2025-10-13 23:02:51 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-13 23:02:51 INF] Hosting environment: Development
+[2025-10-13 23:02:51 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-13 23:02:52 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-13 23:02:53 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-13 23:02:53 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-13 23:02:53 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 66.9673ms
+[2025-10-13 23:02:53 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1203.9695ms
+[2025-10-13 23:02:54 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 965.4292ms
+[2025-10-13 23:02:54 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-13 23:02:55 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 659.9272ms
+[2025-10-13 23:03:04 INF] Request starting HTTP/2 POST https://localhost:7056/Despesa - application/json 277
+[2025-10-13 23:03:05 INF] Executing endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 23:03:05 INF] Route matched with {action = "Cadastrar", controller = "Despesa"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.DespesaDTO) on controller controleDespesa.API.Controllers.DespesaController (controleDespesa.API).
+[2025-10-13 23:03:44 INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-13 23:03:44 INF] Executed action controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API) in 39604.4309ms
+[2025-10-13 23:03:44 INF] Executed endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 23:03:44 INF] Request finished HTTP/2 POST https://localhost:7056/Despesa - 400 null application/json; charset=utf-8 39847.7836ms
+[2025-10-13 23:05:27 INF] Request starting HTTP/2 POST https://localhost:7056/Despesa - application/json 281
+[2025-10-13 23:05:27 INF] Executing endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 23:05:27 INF] Route matched with {action = "Cadastrar", controller = "Despesa"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.DespesaDTO) on controller controleDespesa.API.Controllers.DespesaController (controleDespesa.API).
+[2025-10-13 23:05:44 INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-13 23:05:44 INF] Executed action controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API) in 16888.8202ms
+[2025-10-13 23:05:44 INF] Executed endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 23:05:44 INF] Request finished HTTP/2 POST https://localhost:7056/Despesa - 400 null application/json; charset=utf-8 16940.8515ms
+[2025-10-13 23:05:49 INF] Request starting HTTP/2 POST https://localhost:7056/Despesa - application/json 281
+[2025-10-13 23:05:49 INF] Executing endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 23:05:49 INF] Route matched with {action = "Cadastrar", controller = "Despesa"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.DespesaDTO) on controller controleDespesa.API.Controllers.DespesaController (controleDespesa.API).
+[2025-10-13 23:09:54 INF] Now listening on: https://localhost:7056
+[2025-10-13 23:09:54 INF] Now listening on: http://localhost:5039
+[2025-10-13 23:09:54 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-13 23:09:54 INF] Hosting environment: Development
+[2025-10-13 23:09:54 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-13 23:09:55 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-13 23:09:56 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-13 23:09:56 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-13 23:09:56 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 40.2106ms
+[2025-10-13 23:09:56 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 630.0679ms
+[2025-10-13 23:09:56 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 191.6928ms
+[2025-10-13 23:09:56 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-13 23:09:56 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 146.825ms
+[2025-10-13 23:10:57 INF] Request starting HTTP/2 POST https://localhost:7056/Despesa - application/json 282
+[2025-10-13 23:10:58 INF] Executing endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 23:10:58 INF] Route matched with {action = "Cadastrar", controller = "Despesa"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.DespesaDTO) on controller controleDespesa.API.Controllers.DespesaController (controleDespesa.API).
+[2025-10-13 23:11:29 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-13 23:11:29 INF] Executed action controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API) in 31564.4813ms
+[2025-10-13 23:11:29 INF] Executed endpoint 'controleDespesa.API.Controllers.DespesaController.Cadastrar (controleDespesa.API)'
+[2025-10-13 23:11:29 INF] Request finished HTTP/2 POST https://localhost:7056/Despesa - 500 null application/json; charset=utf-8 31929.7652ms

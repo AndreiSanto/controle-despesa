@@ -1,0 +1,80 @@
+<div class="dashboard">
+  <h2>Resumo Financeiro</h2>
+  <p>Veja a relação entre receitas e despesas do mês.</p>
+
+  <!-- 💰 Seção da meta -->
+  <p-card header="Meta de Despesa do Mês">
+    <p>Meta: R$ {{ metaDespesaMes | number:'1.2-2' }}</p>
+    <p>Gasto: R$ {{ totalDespesasMes | number:'1.2-2' }}</p>
+    <p-progressBar 
+      [value]="percentualGasto"
+      [showValue]="true"
+      [style]="{ height: '20px' }"
+      [color]="percentualGasto > 90 ? '#f44336' : percentualGasto > 70 ? '#ff9800' : '#4caf50'">
+    </p-progressBar>
+  </p-card>
+
+  <!-- 📊 Cards resumo -->
+  <div class="cards">
+    <p-card header="Total de Receitas">
+      <h3 class="positivo">R$ {{ totalReceitasMes | number:'1.2-2' }}</h3>
+    </p-card>
+
+    <p-card header="Total de Despesas">
+      <h3 class="negativo">R$ {{ totalDespesasMes | number:'1.2-2' }}</h3>
+    </p-card>
+
+    <p-card header="Saldo do Mês">
+      <h3 [ngClass]="saldo >= 0 ? 'positivo' : 'negativo'">
+        R$ {{ saldo | number:'1.2-2' }}
+      </h3>
+    </p-card>
+  </div>
+
+  <!-- 📋 Tabelas -->
+  <div class="tabelas">
+    <div>
+      <h3>Últimas Despesas</h3>
+      <p-table [value]="ultimasDespesas">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Data</th>
+            <th>Fixa</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-d>
+          <tr>
+            <td>{{ d.descricao }}</td>
+            <td>R$ {{ d.valor | number:'1.2-2' }}</td>
+            <td>{{ d.dataDespesa | date:'dd/MM/yyyy' }}</td>
+            <td>{{ d.despesaFixa ? 'Sim' : 'Não' }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+
+    <div>
+      <h3>Últimas Receitas</h3>
+      <p-table [value]="ultimasReceitas">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Data</th>
+            <th>Fixa</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-r>
+          <tr>
+            <td>{{ r.descricao }}</td>
+            <td>R$ {{ r.valor | number:'1.2-2' }}</td>
+            <td>{{ r.dataReceita | date:'dd/MM/yyyy' }}</td>
+            <td>{{ r.receitaFixa ? 'Sim' : 'Não' }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
+</div>

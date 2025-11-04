@@ -1,0 +1,44 @@
+
+<p-toast></p-toast>
+<div class="container">
+  <!-- Lado esquerdo -->
+  <div class="left-panel">
+    <h2>Bem-vindo</h2>
+    <p>Acesse sua conta agora</p>
+  <button class="btn-login" (click)="Entrar()">Entrar</button> 
+  </div>
+
+ 
+<div class="right-panel">
+  <h3>Crie sua conta</h3>
+
+  <!-- associa o formGroup -->
+  <form [formGroup]="form" (ngSubmit)="cadastrar()">
+    <div class="form-group">
+      <input 
+        type="text" 
+        placeholder="Nome" 
+        formControlName="nome"
+      />
+    </div>
+
+    <div class="form-group">
+      <input 
+        type="email" 
+        placeholder="E-mail" 
+        formControlName="email"
+      />
+    </div>
+
+    <div class="form-group">
+      <input 
+        type="password" 
+        placeholder="Senha" 
+        formControlName="password"
+      />
+    </div>
+
+    <button type="submit" class="btn-register">Cadastrar</button>
+  </form>
+</div>
+

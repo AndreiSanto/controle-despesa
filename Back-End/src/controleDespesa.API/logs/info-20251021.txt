@@ -1,0 +1,878 @@
+[2025-10-21 12:52:24 INF] Now listening on: https://localhost:7056
+[2025-10-21 12:52:24 INF] Now listening on: http://localhost:5039
+[2025-10-21 12:52:25 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 12:52:25 INF] Hosting environment: Development
+[2025-10-21 12:52:25 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 12:52:36 INF] Request starting HTTP/2 GET https://localhost:7056/swagger - null null
+[2025-10-21 12:52:37 INF] Request finished HTTP/2 GET https://localhost:7056/swagger - 301 0 null 1077.7039ms
+[2025-10-21 12:52:38 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 12:52:38 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/swagger-ui-bundle.js - null null
+[2025-10-21 12:52:38 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/swagger-ui.css - null null
+[2025-10-21 12:52:38 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/swagger-ui-standalone-preset.js - null null
+[2025-10-21 12:52:38 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 467.424ms
+[2025-10-21 12:52:38 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 12:52:38 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 66.1925ms
+[2025-10-21 12:52:38 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 12:52:39 INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[2025-10-21 12:52:39 INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[2025-10-21 12:52:40 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/swagger-ui.css - 200 152034 text/css 1599.2063ms
+[2025-10-21 12:52:40 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 1601.496ms
+[2025-10-21 12:52:40 INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[2025-10-21 12:52:40 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 1701.3572ms
+[2025-10-21 12:52:41 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2534.1857ms
+[2025-10-21 12:52:41 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 12:52:41 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 101.1145ms
+[2025-10-21 12:54:56 INF] Now listening on: https://localhost:7056
+[2025-10-21 12:54:56 INF] Now listening on: http://localhost:5039
+[2025-10-21 12:54:58 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 12:54:58 INF] Hosting environment: Development
+[2025-10-21 12:54:58 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 12:54:58 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 12:54:59 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 12:54:59 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 12:54:59 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1205.3847ms
+[2025-10-21 12:54:59 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 203.2739ms
+[2025-10-21 12:55:00 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 613.7312ms
+[2025-10-21 12:55:00 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 12:55:00 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.7991ms
+[2025-10-21 13:02:01 INF] Request starting HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - null null
+[2025-10-21 13:02:01 INF] CORS policy execution successful.
+[2025-10-21 13:02:01 INF] Request finished HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - 204 null null 50.3548ms
+[2025-10-21 13:02:01 INF] Request starting HTTP/2 POST https://localhost:7056/Receita/Cadastro - application/json 105
+[2025-10-21 13:02:01 INF] CORS policy execution successful.
+[2025-10-21 13:02:01 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:02:01 INF] Route matched with {action = "Cadastrar", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.ReceitaDTO) on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 13:02:01 INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-10-21 13:02:01 INF] Executed action controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API) in 402.7199ms
+[2025-10-21 13:02:01 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:02:01 INF] Request finished HTTP/2 POST https://localhost:7056/Receita/Cadastro - 400 null application/problem+json; charset=utf-8 558.9777ms
+[2025-10-21 13:03:19 INF] Request starting HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - null null
+[2025-10-21 13:03:19 INF] CORS policy execution successful.
+[2025-10-21 13:03:19 INF] Request finished HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - 204 null null 17.7424ms
+[2025-10-21 13:03:19 INF] Request starting HTTP/2 POST https://localhost:7056/Receita/Cadastro - application/json 105
+[2025-10-21 13:03:19 INF] CORS policy execution successful.
+[2025-10-21 13:03:19 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:03:19 INF] Route matched with {action = "Cadastrar", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.ReceitaDTO) on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 13:03:19 INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-10-21 13:03:19 INF] Executed action controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API) in 67.4001ms
+[2025-10-21 13:03:19 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:03:19 INF] Request finished HTTP/2 POST https://localhost:7056/Receita/Cadastro - 400 null application/problem+json; charset=utf-8 242.5782ms
+[2025-10-21 13:07:30 INF] Now listening on: https://localhost:7056
+[2025-10-21 13:07:30 INF] Now listening on: http://localhost:5039
+[2025-10-21 13:07:32 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 13:07:32 INF] Hosting environment: Development
+[2025-10-21 13:07:32 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 13:07:33 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 13:07:34 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1054.5756ms
+[2025-10-21 13:07:34 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 13:07:34 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 13:07:34 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 168.3803ms
+[2025-10-21 13:07:34 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 350.5384ms
+[2025-10-21 13:07:34 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 13:07:34 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/favicon-32x32.png - null null
+[2025-10-21 13:07:35 INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+[2025-10-21 13:07:35 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 299.0987ms
+[2025-10-21 13:07:35 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/favicon-32x32.png - 200 628 image/png 267.6475ms
+[2025-10-21 13:08:05 INF] Request starting HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - null null
+[2025-10-21 13:08:05 INF] CORS policy execution successful.
+[2025-10-21 13:08:05 INF] Request finished HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - 204 null null 60.3538ms
+[2025-10-21 13:08:05 INF] Request starting HTTP/2 POST https://localhost:7056/Receita/Cadastro - application/json 105
+[2025-10-21 13:08:05 INF] CORS policy execution successful.
+[2025-10-21 13:08:05 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:08:05 INF] Route matched with {action = "Cadastrar", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.ReceitaDTO) on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 13:08:06 INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-10-21 13:08:06 INF] Executed action controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API) in 652.9529ms
+[2025-10-21 13:08:06 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:08:06 INF] Request finished HTTP/2 POST https://localhost:7056/Receita/Cadastro - 400 null application/problem+json; charset=utf-8 1228.496ms
+[2025-10-21 13:09:03 INF] Now listening on: https://localhost:7056
+[2025-10-21 13:09:03 INF] Now listening on: http://localhost:5039
+[2025-10-21 13:09:03 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 13:09:03 INF] Hosting environment: Development
+[2025-10-21 13:09:03 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 13:09:05 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 13:09:06 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 13:09:06 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 13:09:06 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 928.9812ms
+[2025-10-21 13:09:06 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 27.7156ms
+[2025-10-21 13:09:06 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 317.541ms
+[2025-10-21 13:09:06 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 13:09:06 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 98.6686ms
+[2025-10-21 13:10:51 INF] Now listening on: https://localhost:7056
+[2025-10-21 13:10:51 INF] Now listening on: http://localhost:5039
+[2025-10-21 13:10:51 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 13:10:51 INF] Hosting environment: Development
+[2025-10-21 13:10:51 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 13:10:52 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 13:10:53 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 13:10:53 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 13:10:53 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 823.5211ms
+[2025-10-21 13:10:53 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 35.3599ms
+[2025-10-21 13:10:54 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 426.3581ms
+[2025-10-21 13:10:54 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 13:10:54 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 290.8553ms
+[2025-10-21 13:12:23 INF] Now listening on: https://localhost:7056
+[2025-10-21 13:12:23 INF] Now listening on: http://localhost:5039
+[2025-10-21 13:12:23 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 13:12:23 INF] Hosting environment: Development
+[2025-10-21 13:12:23 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 13:12:25 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 13:12:26 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 13:12:26 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 13:12:26 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 69.8617ms
+[2025-10-21 13:12:26 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1039.6615ms
+[2025-10-21 13:12:27 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 193.9871ms
+[2025-10-21 13:12:27 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 13:12:27 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.9979ms
+[2025-10-21 13:13:54 INF] Now listening on: https://localhost:7056
+[2025-10-21 13:13:54 INF] Now listening on: http://localhost:5039
+[2025-10-21 13:13:55 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 13:13:55 INF] Hosting environment: Development
+[2025-10-21 13:13:55 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 13:13:57 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 13:13:58 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1016.3338ms
+[2025-10-21 13:13:58 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 13:13:58 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 13:13:58 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 63.4115ms
+[2025-10-21 13:13:58 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 353.6085ms
+[2025-10-21 13:13:58 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 13:13:59 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.7685ms
+[2025-10-21 13:17:21 INF] Now listening on: https://localhost:7056
+[2025-10-21 13:17:21 INF] Now listening on: http://localhost:5039
+[2025-10-21 13:17:21 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 13:17:21 INF] Hosting environment: Development
+[2025-10-21 13:17:21 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 13:17:23 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 13:17:24 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 949.8855ms
+[2025-10-21 13:17:24 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 13:17:24 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 13:17:24 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 29.4628ms
+[2025-10-21 13:17:24 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 289.5308ms
+[2025-10-21 13:17:25 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 13:17:25 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 56.6116ms
+[2025-10-21 13:18:26 INF] Now listening on: https://localhost:7056
+[2025-10-21 13:18:26 INF] Now listening on: http://localhost:5039
+[2025-10-21 13:18:28 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 13:18:28 INF] Hosting environment: Development
+[2025-10-21 13:18:28 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 13:18:28 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 13:18:29 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 13:18:29 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 13:18:29 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1007.6918ms
+[2025-10-21 13:18:29 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 40.3612ms
+[2025-10-21 13:18:29 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 397.6344ms
+[2025-10-21 13:18:30 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 13:18:30 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 331.4525ms
+[2025-10-21 13:19:59 INF] Now listening on: https://localhost:7056
+[2025-10-21 13:19:59 INF] Now listening on: http://localhost:5039
+[2025-10-21 13:20:00 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 13:20:00 INF] Hosting environment: Development
+[2025-10-21 13:20:00 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 13:20:02 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 13:20:03 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 13:20:03 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 13:20:03 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1020.4763ms
+[2025-10-21 13:20:03 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 94.8609ms
+[2025-10-21 13:20:03 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 375.6479ms
+[2025-10-21 13:20:03 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 13:20:03 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 254.2834ms
+[2025-10-21 13:20:21 INF] Request starting HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - null null
+[2025-10-21 13:20:21 INF] CORS policy execution successful.
+[2025-10-21 13:20:21 INF] Request finished HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - 204 null null 85.3842ms
+[2025-10-21 13:20:21 INF] Request starting HTTP/2 POST https://localhost:7056/Receita/Cadastro - application/json 105
+[2025-10-21 13:20:21 INF] CORS policy execution successful.
+[2025-10-21 13:20:21 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:20:21 INF] Route matched with {action = "Cadastrar", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.ReceitaDTO) on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 13:20:57 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-21 13:20:57 INF] Executed action controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API) in 36367.583ms
+[2025-10-21 13:20:57 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:20:57 INF] Request finished HTTP/2 POST https://localhost:7056/Receita/Cadastro - 500 null application/json; charset=utf-8 36710.7974ms
+[2025-10-21 13:22:13 INF] Request starting HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - null null
+[2025-10-21 13:22:13 INF] CORS policy execution successful.
+[2025-10-21 13:22:13 INF] Request finished HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - 204 null null 24.8397ms
+[2025-10-21 13:22:13 INF] Request starting HTTP/2 POST https://localhost:7056/Receita/Cadastro - application/json 105
+[2025-10-21 13:22:13 INF] CORS policy execution successful.
+[2025-10-21 13:22:13 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:22:13 INF] Route matched with {action = "Cadastrar", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.ReceitaDTO) on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 13:22:21 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-21 13:22:21 INF] Executed action controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API) in 7653.5663ms
+[2025-10-21 13:22:21 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:22:21 INF] Request finished HTTP/2 POST https://localhost:7056/Receita/Cadastro - 500 null application/json; charset=utf-8 7867.8852ms
+[2025-10-21 13:23:51 INF] Request starting HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - null null
+[2025-10-21 13:23:51 INF] CORS policy execution successful.
+[2025-10-21 13:23:51 INF] Request finished HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - 204 null null 185.349ms
+[2025-10-21 13:23:51 INF] Request starting HTTP/2 POST https://localhost:7056/Receita/Cadastro - application/json 105
+[2025-10-21 13:23:51 INF] CORS policy execution successful.
+[2025-10-21 13:23:51 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:23:51 INF] Route matched with {action = "Cadastrar", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.ReceitaDTO) on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 13:23:56 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-21 13:23:56 INF] Executed action controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API) in 5027.6052ms
+[2025-10-21 13:23:56 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:23:56 INF] Request finished HTTP/2 POST https://localhost:7056/Receita/Cadastro - 500 null application/json; charset=utf-8 5091.9908ms
+[2025-10-21 13:24:18 INF] Request starting HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - null null
+[2025-10-21 13:24:18 INF] CORS policy execution successful.
+[2025-10-21 13:24:18 INF] Request finished HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - 204 null null 34.9514ms
+[2025-10-21 13:24:18 INF] Request starting HTTP/2 POST https://localhost:7056/Receita/Cadastro - application/json 105
+[2025-10-21 13:24:18 INF] CORS policy execution successful.
+[2025-10-21 13:24:18 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:24:18 INF] Route matched with {action = "Cadastrar", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.ReceitaDTO) on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 13:26:40 INF] Now listening on: https://localhost:7056
+[2025-10-21 13:26:40 INF] Now listening on: http://localhost:5039
+[2025-10-21 13:26:40 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 13:26:41 INF] Hosting environment: Development
+[2025-10-21 13:26:41 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 13:26:42 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 13:26:43 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 13:26:43 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 13:26:43 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1118.9852ms
+[2025-10-21 13:26:43 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 118.8937ms
+[2025-10-21 13:26:44 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 391.7443ms
+[2025-10-21 13:26:44 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 13:26:44 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.2064ms
+[2025-10-21 13:28:05 INF] Request starting HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - null null
+[2025-10-21 13:28:05 INF] CORS policy execution successful.
+[2025-10-21 13:28:05 INF] Request finished HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - 204 null null 37.2703ms
+[2025-10-21 13:28:05 INF] Request starting HTTP/2 POST https://localhost:7056/Receita/Cadastro - application/json 105
+[2025-10-21 13:28:05 INF] CORS policy execution successful.
+[2025-10-21 13:28:05 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:28:05 INF] Route matched with {action = "Cadastrar", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.ReceitaDTO) on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 13:28:18 ERR] Failed executing DbCommand (377ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Int32), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Receitas` (`DataCadastro`, `Descricao`, `ReceitaFixa`, `TipoDespesaReceitaId`, `Valor`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Receitas`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+[2025-10-21 13:28:18 ERR] An exception occurred in the database while saving changes for context type 'controleDespesa.Infrastructure.Data.ApiContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Table 'controle_despesas.receitas' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Table 'controle_despesas.receitas' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2025-10-21 13:28:20 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-21 13:28:20 INF] Executed action controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API) in 14936.8734ms
+[2025-10-21 13:28:20 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:28:21 INF] Request finished HTTP/2 POST https://localhost:7056/Receita/Cadastro - 500 null application/json; charset=utf-8 15384.6636ms
+[2025-10-21 13:28:26 INF] Request starting HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - null null
+[2025-10-21 13:28:26 INF] CORS policy execution successful.
+[2025-10-21 13:28:26 INF] Request finished HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - 204 null null 21.5425ms
+[2025-10-21 13:28:26 INF] Request starting HTTP/2 POST https://localhost:7056/Receita/Cadastro - application/json 105
+[2025-10-21 13:28:27 INF] CORS policy execution successful.
+[2025-10-21 13:28:27 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:28:27 INF] Route matched with {action = "Cadastrar", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.ReceitaDTO) on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 13:28:58 ERR] Failed executing DbCommand (10ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Int32), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Receitas` (`DataCadastro`, `Descricao`, `ReceitaFixa`, `TipoDespesaReceitaId`, `Valor`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Receitas`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+[2025-10-21 13:28:58 ERR] An exception occurred in the database while saving changes for context type 'controleDespesa.Infrastructure.Data.ApiContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Table 'controle_despesas.receitas' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Table 'controle_despesas.receitas' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2025-10-21 13:28:59 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-21 13:28:59 INF] Executed action controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API) in 32337.4136ms
+[2025-10-21 13:28:59 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:28:59 INF] Request finished HTTP/2 POST https://localhost:7056/Receita/Cadastro - 500 null application/json; charset=utf-8 32651.9765ms
+[2025-10-21 13:29:14 INF] Request starting HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - null null
+[2025-10-21 13:29:14 INF] CORS policy execution successful.
+[2025-10-21 13:29:14 INF] Request finished HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - 204 null null 17.6807ms
+[2025-10-21 13:29:14 INF] Request starting HTTP/2 POST https://localhost:7056/Receita/Cadastro - application/json 105
+[2025-10-21 13:29:14 INF] CORS policy execution successful.
+[2025-10-21 13:29:14 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:29:14 INF] Route matched with {action = "Cadastrar", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.ReceitaDTO) on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 13:29:18 ERR] Failed executing DbCommand (19ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Int32), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Receitas` (`DataCadastro`, `Descricao`, `ReceitaFixa`, `TipoDespesaReceitaId`, `Valor`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Receitas`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+[2025-10-21 13:29:18 ERR] An exception occurred in the database while saving changes for context type 'controleDespesa.Infrastructure.Data.ApiContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Table 'controle_despesas.receitas' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Table 'controle_despesas.receitas' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2025-10-21 13:30:36 INF] Now listening on: https://localhost:7056
+[2025-10-21 13:30:36 INF] Now listening on: http://localhost:5039
+[2025-10-21 13:30:37 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 13:30:37 INF] Hosting environment: Development
+[2025-10-21 13:30:37 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 13:30:39 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 13:30:40 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 13:30:40 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 13:30:40 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1090.5509ms
+[2025-10-21 13:30:40 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 58.568ms
+[2025-10-21 13:30:40 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 299.9315ms
+[2025-10-21 13:30:40 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 13:30:40 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 112.9871ms
+[2025-10-21 13:30:47 INF] Request starting HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - null null
+[2025-10-21 13:30:47 INF] CORS policy execution successful.
+[2025-10-21 13:30:47 INF] Request finished HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - 204 null null 98.9238ms
+[2025-10-21 13:30:47 INF] Request starting HTTP/2 POST https://localhost:7056/Receita/Cadastro - application/json 105
+[2025-10-21 13:30:48 INF] CORS policy execution successful.
+[2025-10-21 13:30:48 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:30:48 INF] Route matched with {action = "Cadastrar", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.ReceitaDTO) on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 13:30:52 INF] Request starting HTTP/2 POST https://localhost:7056/Receita/Cadastro - application/json 105
+[2025-10-21 13:30:52 INF] CORS policy execution successful.
+[2025-10-21 13:30:52 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:30:52 INF] Route matched with {action = "Cadastrar", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.ReceitaDTO) on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 13:31:15 ERR] Failed executing DbCommand (1,035ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Int32), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Receita` (`DataCadastro`, `Descricao`, `ReceitaFixa`, `TipoDespesaReceitaId`, `Valor`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Receita`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+[2025-10-21 13:31:15 ERR] Failed executing DbCommand (1,032ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Int32), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Receita` (`DataCadastro`, `Descricao`, `ReceitaFixa`, `TipoDespesaReceitaId`, `Valor`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Receita`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+[2025-10-21 13:31:15 ERR] An exception occurred in the database while saving changes for context type 'controleDespesa.Infrastructure.Data.ApiContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`controle_despesas`.`receita`, CONSTRAINT `FK_Receita_TipoDespesaReceita` FOREIGN KEY (`TipoDespesaReceitaId`) REFERENCES `tipodespesareceita` (`Id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`controle_despesas`.`receita`, CONSTRAINT `FK_Receita_TipoDespesaReceita` FOREIGN KEY (`TipoDespesaReceitaId`) REFERENCES `tipodespesareceita` (`Id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2025-10-21 13:31:15 ERR] An exception occurred in the database while saving changes for context type 'controleDespesa.Infrastructure.Data.ApiContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`controle_despesas`.`receita`, CONSTRAINT `FK_Receita_TipoDespesaReceita` FOREIGN KEY (`TipoDespesaReceitaId`) REFERENCES `tipodespesareceita` (`Id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`controle_despesas`.`receita`, CONSTRAINT `FK_Receita_TipoDespesaReceita` FOREIGN KEY (`TipoDespesaReceitaId`) REFERENCES `tipodespesareceita` (`Id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2025-10-21 13:32:08 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-21 13:32:08 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-21 13:32:08 INF] Executed action controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API) in 80610.8418ms
+[2025-10-21 13:32:08 INF] Executed action controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API) in 75833.0781ms
+[2025-10-21 13:32:08 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:32:08 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:32:08 INF] Request finished HTTP/2 POST https://localhost:7056/Receita/Cadastro - 500 null application/json; charset=utf-8 80969.4256ms
+[2025-10-21 13:32:08 INF] Request finished HTTP/2 POST https://localhost:7056/Receita/Cadastro - 500 null application/json; charset=utf-8 76282.6573ms
+[2025-10-21 13:32:43 INF] Request starting HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - null null
+[2025-10-21 13:32:43 INF] CORS policy execution successful.
+[2025-10-21 13:32:43 INF] Request finished HTTP/2 OPTIONS https://localhost:7056/Receita/Cadastro - 204 null null 18.0844ms
+[2025-10-21 13:32:43 INF] Request starting HTTP/2 POST https://localhost:7056/Receita/Cadastro - application/json 105
+[2025-10-21 13:32:43 INF] CORS policy execution successful.
+[2025-10-21 13:32:43 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:32:43 INF] Route matched with {action = "Cadastrar", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cadastrar(controleDespesa.Application.DTOs.ReceitaDTO) on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 13:32:47 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 13:32:47 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 69.3434ms
+[2025-10-21 13:32:48 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 13:32:48 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 13:32:48 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 32.6881ms
+[2025-10-21 13:32:48 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.3201ms
+[2025-10-21 13:32:48 INF] Executed DbCommand (182ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Int32), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Receita` (`DataCadastro`, `Descricao`, `ReceitaFixa`, `TipoDespesaReceitaId`, `Valor`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Receita`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+[2025-10-21 13:32:49 INF] Executing CreatedResult, writing value of type 'controleDespesa.Domain.Entities.Receita'.
+[2025-10-21 13:32:49 INF] Executed action controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API) in 5479.9929ms
+[2025-10-21 13:32:49 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.Cadastrar (controleDespesa.API)'
+[2025-10-21 13:32:49 INF] Request finished HTTP/2 POST https://localhost:7056/Receita/Cadastro - 201 null application/json; charset=utf-8 5567.8112ms
+[2025-10-21 13:32:50 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 13:32:50 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 373.6605ms
+[2025-10-21 21:06:56 INF] Now listening on: https://localhost:7056
+[2025-10-21 21:06:56 INF] Now listening on: http://localhost:5039
+[2025-10-21 21:06:56 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 21:06:56 INF] Hosting environment: Development
+[2025-10-21 21:06:56 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 21:06:59 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 21:07:00 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 21:07:00 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 21:07:00 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1114.2866ms
+[2025-10-21 21:07:00 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 41.8115ms
+[2025-10-21 21:07:00 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 316.6437ms
+[2025-10-21 21:07:00 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 21:07:00 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.2754ms
+[2025-10-21 21:09:34 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 21:09:34 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 21:09:34 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 21:09:39 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-21 21:09:39 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 4820.097ms
+[2025-10-21 21:09:40 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 21:09:40 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 500 null application/json; charset=utf-8 5459.6156ms
+[2025-10-21 21:10:40 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 21:10:40 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 21:10:40 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 21:17:01 INF] Now listening on: https://localhost:7056
+[2025-10-21 21:17:02 INF] Now listening on: http://localhost:5039
+[2025-10-21 21:17:03 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 21:17:03 INF] Hosting environment: Development
+[2025-10-21 21:17:03 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 21:17:04 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 21:17:05 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1057.8951ms
+[2025-10-21 21:17:05 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 21:17:05 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 21:17:05 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 28.0281ms
+[2025-10-21 21:17:05 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 147.5667ms
+[2025-10-21 21:17:05 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 21:17:05 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 292.661ms
+[2025-10-21 21:18:37 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 21:18:37 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 21:18:37 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 21:18:49 ERR] Failed executing DbCommand (810ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Ativo`, `t`.`DataCadastro`, `t`.`Nome`, `t`.`Tipo`
+FROM `TipoDespesaReceitas` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`Tipo` = 1)
+[2025-10-21 21:18:49 ERR] An exception occurred while iterating over the results of a query for context type 'controleDespesa.Infrastructure.Data.ApiContext'.
+MySqlConnector.MySqlException (0x80004005): Table 'controle_despesas.tipodespesareceitas' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+MySqlConnector.MySqlException (0x80004005): Table 'controle_despesas.tipodespesareceitas' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[2025-10-21 21:19:06 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-21 21:19:06 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 28640.5265ms
+[2025-10-21 21:19:06 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 21:19:06 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 500 null application/json; charset=utf-8 29018.6015ms
+[2025-10-21 21:23:06 INF] Now listening on: https://localhost:7056
+[2025-10-21 21:23:06 INF] Now listening on: http://localhost:5039
+[2025-10-21 21:23:06 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 21:23:06 INF] Hosting environment: Development
+[2025-10-21 21:23:06 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 21:23:08 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 21:23:09 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 21:23:09 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 21:23:09 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 896.271ms
+[2025-10-21 21:23:09 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 42.967ms
+[2025-10-21 21:23:10 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 362.1687ms
+[2025-10-21 21:23:10 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 21:23:10 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 332.2924ms
+[2025-10-21 21:23:20 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 21:23:20 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 21:23:20 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 21:23:30 ERR] Failed executing DbCommand (325ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Ativo`, `t`.`DataCadastro`, `t`.`Nome`, `t`.`Tipo`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`Tipo` = 1)
+[2025-10-21 21:23:31 ERR] An exception occurred while iterating over the results of a query for context type 'controleDespesa.Infrastructure.Data.ApiContext'.
+MySqlConnector.MySqlException (0x80004005): Unknown column 't.Tipo' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+MySqlConnector.MySqlException (0x80004005): Unknown column 't.Tipo' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[2025-10-21 21:23:43 INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-10-21 21:23:43 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 22462.3763ms
+[2025-10-21 21:23:43 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 21:23:43 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 500 null application/json; charset=utf-8 23383.7934ms
+[2025-10-21 21:25:22 INF] Now listening on: https://localhost:7056
+[2025-10-21 21:25:23 INF] Now listening on: http://localhost:5039
+[2025-10-21 21:25:23 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 21:25:23 INF] Hosting environment: Development
+[2025-10-21 21:25:23 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 21:25:25 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 21:25:26 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 21:25:27 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 21:25:27 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 180.3449ms
+[2025-10-21 21:25:27 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1236.7843ms
+[2025-10-21 21:25:27 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 417.8961ms
+[2025-10-21 21:25:27 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 21:25:27 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 102.5546ms
+[2025-10-21 21:25:40 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 21:25:40 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 21:25:40 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 21:25:50 INF] Executed DbCommand (96ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Ativo`, `t`.`DataCadastro`, `t`.`Nome`, `t`.`tipodespesareceita`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 21:26:12 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Domain.Entities.TipoDespesaReceita, controleDespesa.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 21:26:12 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 32182.7694ms
+[2025-10-21 21:26:12 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 21:26:12 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 200 null application/json; charset=utf-8 32491.3256ms
+[2025-10-21 22:15:16 INF] Now listening on: https://localhost:7056
+[2025-10-21 22:15:16 INF] Now listening on: http://localhost:5039
+[2025-10-21 22:15:17 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-21 22:15:17 INF] Hosting environment: Development
+[2025-10-21 22:15:17 INF] Content root path: D:\Controle de Despesas\Back-End\src\controleDespesa.API
+[2025-10-21 22:15:18 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - null null
+[2025-10-21 22:15:20 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - 200 null text/html;charset=utf-8 1412.8749ms
+[2025-10-21 22:15:20 INF] Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - null null
+[2025-10-21 22:15:20 INF] Request starting HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - null null
+[2025-10-21 22:15:20 INF] Request finished HTTP/2 GET https://localhost:7056/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 259.9703ms
+[2025-10-21 22:15:21 INF] Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 545.9353ms
+[2025-10-21 22:15:21 INF] Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - null null
+[2025-10-21 22:15:21 INF] Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 167.254ms
+[2025-10-21 22:16:24 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 22:16:24 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 22:16:24 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 22:16:35 INF] Executed DbCommand (282ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Nome`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 22:16:35 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Communication.Response.TipoDespesaReceitaResponse, controleDespesa.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 22:16:35 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 11050.5171ms
+[2025-10-21 22:16:35 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 22:16:35 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 200 null application/json; charset=utf-8 11534.3647ms
+[2025-10-21 22:54:31 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 22:54:31 INF] CORS policy execution successful.
+[2025-10-21 22:54:31 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 22:54:31 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 22:55:08 INF] Executed DbCommand (433ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Nome`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 22:55:08 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Communication.Response.TipoDespesaReceitaResponse, controleDespesa.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 22:55:08 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 37063.133ms
+[2025-10-21 22:55:08 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 22:55:09 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 200 null application/json; charset=utf-8 37569.6891ms
+[2025-10-21 22:59:53 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 22:59:53 INF] CORS policy execution successful.
+[2025-10-21 22:59:53 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 22:59:54 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 22:59:54 INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Nome`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 22:59:55 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Communication.Response.TipoDespesaReceitaResponse, controleDespesa.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 22:59:55 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 1136.4259ms
+[2025-10-21 22:59:55 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 22:59:55 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 200 null application/json; charset=utf-8 1470.465ms
+[2025-10-21 23:00:10 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 23:00:10 INF] CORS policy execution successful.
+[2025-10-21 23:00:10 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:00:10 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 23:00:11 INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Nome`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 23:00:11 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Communication.Response.TipoDespesaReceitaResponse, controleDespesa.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 23:00:11 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 322.1514ms
+[2025-10-21 23:00:11 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:00:11 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 200 null application/json; charset=utf-8 851.2629ms
+[2025-10-21 23:00:35 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 23:00:36 INF] CORS policy execution successful.
+[2025-10-21 23:00:36 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:00:36 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 23:00:36 INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Nome`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 23:00:37 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Communication.Response.TipoDespesaReceitaResponse, controleDespesa.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 23:00:37 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 406.7792ms
+[2025-10-21 23:00:37 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:00:37 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 200 null application/json; charset=utf-8 1241.2626ms
+[2025-10-21 23:00:54 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 23:00:55 INF] CORS policy execution successful.
+[2025-10-21 23:00:55 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:00:55 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 23:00:56 INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Nome`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 23:00:57 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Communication.Response.TipoDespesaReceitaResponse, controleDespesa.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 23:00:57 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 2108.6466ms
+[2025-10-21 23:00:57 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:00:57 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 200 null application/json; charset=utf-8 2928.449ms
+[2025-10-21 23:01:09 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 23:01:09 INF] CORS policy execution successful.
+[2025-10-21 23:01:09 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:01:09 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 23:01:10 INF] Executed DbCommand (91ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Nome`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 23:01:11 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Communication.Response.TipoDespesaReceitaResponse, controleDespesa.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 23:01:11 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 1211.7142ms
+[2025-10-21 23:01:11 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:01:11 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 200 null application/json; charset=utf-8 1885.0054ms
+[2025-10-21 23:01:28 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 23:01:28 INF] CORS policy execution successful.
+[2025-10-21 23:01:28 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:01:28 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 23:01:28 INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Nome`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 23:01:28 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Communication.Response.TipoDespesaReceitaResponse, controleDespesa.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 23:01:28 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 352.0239ms
+[2025-10-21 23:01:28 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:01:28 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 200 null application/json; charset=utf-8 519.4789ms
+[2025-10-21 23:02:03 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 23:02:04 INF] CORS policy execution successful.
+[2025-10-21 23:02:04 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:02:04 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 23:02:04 INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Nome`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 23:02:04 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Communication.Response.TipoDespesaReceitaResponse, controleDespesa.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 23:02:04 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 352.6318ms
+[2025-10-21 23:02:04 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:02:04 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 200 null application/json; charset=utf-8 884.3192ms
+[2025-10-21 23:02:22 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 23:02:23 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 23:02:23 INF] CORS policy execution successful.
+[2025-10-21 23:02:23 INF] CORS policy execution successful.
+[2025-10-21 23:02:23 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:02:23 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:02:23 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 23:02:23 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 23:02:23 INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Nome`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 23:02:23 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Communication.Response.TipoDespesaReceitaResponse, controleDespesa.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 23:02:23 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 458.0897ms
+[2025-10-21 23:02:23 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:02:23 INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Nome`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 23:02:24 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 200 null application/json; charset=utf-8 939.6981ms
+[2025-10-21 23:02:24 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Communication.Response.TipoDespesaReceitaResponse, controleDespesa.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 23:02:24 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 608.4166ms
+[2025-10-21 23:02:24 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:02:24 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 499 null application/json; charset=utf-8 1857.1487ms
+[2025-10-21 23:04:07 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 23:04:07 INF] CORS policy execution successful.
+[2025-10-21 23:04:07 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:04:07 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 23:04:08 INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Nome`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 23:04:08 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Communication.Response.TipoDespesaReceitaResponse, controleDespesa.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 23:04:08 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 804.3006ms
+[2025-10-21 23:04:08 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:04:08 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 200 null application/json; charset=utf-8 1167.9099ms
+[2025-10-21 23:04:22 INF] Request starting HTTP/2 GET https://localhost:7056/Receita/Listar - null null
+[2025-10-21 23:04:22 INF] CORS policy execution successful.
+[2025-10-21 23:04:22 INF] Executing endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:04:22 INF] Route matched with {action = "ListarTipoCategoria", controller = "Receita"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTipoCategoria() on controller controleDespesa.API.Controllers.ReceitaController (controleDespesa.API).
+[2025-10-21 23:04:22 INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Nome`
+FROM `TipoDespesaReceita` AS `t`
+WHERE `t`.`Ativo` AND (`t`.`tipodespesareceita` = 1)
+[2025-10-21 23:04:23 INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[controleDespesa.Communication.Response.TipoDespesaReceitaResponse, controleDespesa.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-10-21 23:04:23 INF] Executed action controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API) in 589.0295ms
+[2025-10-21 23:04:23 INF] Executed endpoint 'controleDespesa.API.Controllers.ReceitaController.ListarTipoCategoria (controleDespesa.API)'
+[2025-10-21 23:04:23 INF] Request finished HTTP/2 GET https://localhost:7056/Receita/Listar - 200 null application/json; charset=utf-8 1061.0776ms
