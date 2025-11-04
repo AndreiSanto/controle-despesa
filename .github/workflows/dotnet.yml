@@ -1,0 +1,67 @@
+name: Build .NET + Angular
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # --- Checkout do código ---
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # --- Configura o .NET ---
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      # --- Restaura dependências do backend ---
+      - name: Restore .NET dependencies
+        run: dotnet restore
+        working-directory: ./Back-End
+
+      # --- Build do backend ---
+      - name: Build .NET API
+        run: dotnet build --configuration Release --no-restore
+        working-directory: ./Back-End
+
+      # --- Testes do backend (opcional) ---
+      - name: Test .NET API
+        run: dotnet test --no-build --verbosity normal
+        working-directory: ./Back-End
+
+      # --- Publica o backend ---
+      - name: Publish .NET API
+        run: dotnet publish --configuration Release --output ./publish
+        working-directory: ./Back-End
+
+      # --- Configura Node.js para o Angular ---
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # --- Instala dependências do Angular ---
+      - name: Install Angular dependencies
+        run: npm ci
+        working-directory: ./Front-End/controle-despesa
+
+      # --- Build do Angular ---
+      - name: Build Angular app
+        run: npm run build
+        working-directory: ./Front-End/controle-despesa
+
+      # --- Upload dos artefatos (build final) ---
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts
+          path: |
+            Back-End/publish
+            Front-End/controle-despesa/dist
