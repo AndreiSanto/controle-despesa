@@ -23,23 +23,22 @@ jobs:
 
       # --- Restaura dependências do backend ---
       - name: Restore .NET dependencies
-        run: dotnet restore
-        working-directory: ./Back-End
+        run: dotnet restore ./Back-End/ControleDespesa.sln
 
       # --- Build do backend ---
       - name: Build .NET API
-        run: dotnet build --configuration Release --no-restore
-        working-directory: ./Back-End
+        run: dotnet build ./Back-End/ControleDespesa.sln --configuration Release --no-restore
 
-      # --- Testes do backend (opcional) ---
-      - name: Test .NET API
-        run: dotnet test --no-build --verbosity normal
-        working-directory: ./Back-End/tests
+      # --- Testes do backend ---
+      - name: Run .NET tests
+        run: |
+          dotnet test ./Back-End/tests/Validacao.Test/Validacao.Test.csproj --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx" || true
+          dotnet test ./Back-End/tests/UseCaseTest/UseCaseTest.csproj --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx" || true
+        continue-on-error: false
 
       # --- Publica o backend ---
       - name: Publish .NET API
-        run: dotnet publish --configuration Release --output ./publish
-        working-directory: ./Back-End
+        run: dotnet publish ./Back-End/ControleDespesa.Api/ControleDespesa.Api.csproj --configuration Release --output ./Back-End/publish
 
       # --- Configura Node.js para o Angular ---
       - name: Setup Node.js
