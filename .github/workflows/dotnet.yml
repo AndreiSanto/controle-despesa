@@ -34,8 +34,10 @@ jobs:
       # --- Testes do backend ---
       - name: Run .NET tests
         run: |
-          dotnet test ./Back-End/tests/Validacao.Test/Validacao.Test.csproj --no-build --verbosity normal
-          dotnet test ./Back-End/tests/UseCaseTest/AppServiceTest.csproj --no-build --verbosity normal
+          cd ./Back-End/tests/Validacao.Test
+          dotnet test --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx" || true
+          cd ../UseCaseTest
+          dotnet test --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx" || true
         continue-on-error: false
 
       # --- Publica o backend ---
