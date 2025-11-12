@@ -51,7 +51,8 @@ export class FormDespesaComponent implements OnInit {
     numeroDeParcela: 0,
     parcelado: false,
     despesaFixa: false,
-    tipoDespesaReceitaId: null
+    tipoDespesaReceitaId: null,
+    usuarioId:0
   };
 
   tipoDespesa: TipoDespesaReceitaResponse[] = [];
@@ -151,7 +152,8 @@ export class FormDespesaComponent implements OnInit {
       numeroDeParcela: 0,
       parcelado: false,
       despesaFixa: false,
-      tipoDespesaReceitaId: null
+      tipoDespesaReceitaId: null,
+      usuarioId:0
     };
   }
 

@@ -1,4 +1,6 @@
-﻿using controleDespesa.Application.Service.Interfaces;
+﻿using controleDespesa.API.Attributes;
+using controleDespesa.Application.Service.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
@@ -7,6 +9,7 @@ namespace controleDespesa.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [Authorize]
     public class DashboardController : ControllerBase
     { 
         private readonly IDashboardAppService _dashboardService;

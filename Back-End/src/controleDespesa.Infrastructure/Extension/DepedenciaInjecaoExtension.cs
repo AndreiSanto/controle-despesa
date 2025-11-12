@@ -1,13 +1,16 @@
 ﻿using controleDespesa.Domain.Interface;
 using controleDespesa.Domain.Repositorys.Dashboard.Interface;
 using controleDespesa.Domain.Repositorys.Despesa.Interface;
+using controleDespesa.Domain.Repositorys.Login.Interface;
 using controleDespesa.Domain.Repositorys.Receita.Interface;
 using controleDespesa.Domain.Repositorys.TipoDespesaReceita;
-using controleDespesa.Domain.Repositorys.Usuario.Interface;
+using controleDespesa.Domain.Repositorys.Token;
+using controleDespesa.Domain.Repositorys.Usuarios.Interface;
 using controleDespesa.Domain.Security.Tokens;
 using controleDespesa.Infrastructure.Data;
 using controleDespesa.Infrastructure.Data.Repository;
 using controleDespesa.Infrastructure.Seguranca.Tokens.Acesso.Generator;
+using controleDespesa.Infrastructure.Seguranca.Tokens.Acesso.Refresh;
 using controleDespesa.Infrastructure.Seguranca.Tokens.Acesso.Validator;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -50,6 +53,8 @@ namespace controleDespesa.Infrastructure.Extension
             services.AddScoped<IReceitaRepository, ReceitaRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IDashboardRepository, DashboardRepository>();
+            services.AddScoped<ILoginRepository, LoginUsuarioRepository>();
+            services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
 
 
         }
@@ -61,16 +66,25 @@ namespace controleDespesa.Infrastructure.Extension
            
             var tempoExpiracaoStr = configuration["Jwt:TempoExpiracao"];
             var chaveAssinatura = configuration["Jwt:ChaveAssinatura"];
+            var tempoRefreshStr = configuration["Jwt:TempoRefresh"];
+
 
             if (string.IsNullOrEmpty(chaveAssinatura))
                 throw new ArgumentException("Chave de assinatura JWT não configurada");
 
             if (!uint.TryParse(tempoExpiracaoStr, out var tempoExpiracao))
-                tempoExpiracao = 60; 
+                tempoExpiracao = 1;
+
+            if (!uint.TryParse(tempoRefreshStr, out var tempoRefresh))
+                tempoRefresh = 10080; 
+
 
             // Registra o generator no DI
-            services.AddScoped<IAcessTokenGenerator>(sp => new JwkTokenGenerator(tempoExpiracao, chaveAssinatura));
+            services.AddScoped<IAcessTokenGenerator>(sp => new JwtTokenGenerator(tempoExpiracao, chaveAssinatura));
             services.AddScoped<IAcessTokenValidator>(sp => new JwtTokenValidator(chaveAssinatura));
+
+            services.AddScoped<IRefreshTokenGenerator>(sp =>
+        new JwtRefreshTokenGenerator(tempoRefresh, chaveAssinatura));
         }
 
 

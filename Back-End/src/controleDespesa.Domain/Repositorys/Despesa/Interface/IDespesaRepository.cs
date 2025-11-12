@@ -20,6 +20,8 @@ namespace controleDespesa.Domain.Repositorys.Despesa.Interface
 
         public Task<Entities.Despesa> BuscarDespesa(int id);
 
+        public Task<decimal> ObterTotalDoMesAsync();
+
 
 
 

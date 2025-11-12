@@ -8,6 +8,7 @@ export interface DespesaDTO {
     dataDespesa: Date;
     parcelado: boolean;
     despesaFixa: boolean;
+    usuarioId:number;
 
 
 

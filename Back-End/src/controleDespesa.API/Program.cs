@@ -1,15 +1,22 @@
 using AutoMapper;
+using controleDespesa.API.Token;
 using controleDespesa.Application.Extension;
 using controleDespesa.Application.Service;
 using controleDespesa.Application.Service.Cryptografia;
+using controleDespesa.Domain.Security.Tokens;
 using controleDespesa.Infrastructure;
 using controleDespesa.Infrastructure.Extension;
+using controleDespesa.Infrastructure.Jobs;
 using controleDespesa.Infrastructure.Migration;
+using Hangfire;
+using Hangfire.MySql;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using MySqlConnector;
 using Serilog;
 using System.Text;
+using DepedenciaInjecaoExtension = controleDespesa.Application.Extension.DepedenciaInjecaoExtension;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -50,27 +57,35 @@ builder.Services.AddSwaggerGen(options =>
 
 });
 
+builder.Services.AddHangfire(config =>
+    config.UseSimpleAssemblyNameTypeSerializer()
+          .UseRecommendedSerializerSettings()
+          .UseStorage(
+              new MySqlStorage(
+                  builder.Configuration.GetConnectionString("DefaultConnection"),
+                  new MySqlStorageOptions
+                  {
+                      TablesPrefix = "Hangfire_",          
+                      QueuePollInterval = TimeSpan.FromSeconds(15)
+                  }
+              )
+          )
+);
+builder.Services.AddHangfireServer();
 
-var jwtSection = builder.Configuration.GetSection("Jwt");
-var jwtIssuer = jwtSection["Issuer"];
-var jwtKey = jwtSection["ChaveAssinatura"];
+
+
 
 
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = jwtIssuer,
-            ValidAudience = jwtIssuer,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
-        };
+        options.TokenValidationParameters = TokenHelpers.GetTokenValidationParameters(builder.Configuration);
     });
+
+builder.Services.AddAuthorization();
+
 
 
 Log.Logger = new LoggerConfiguration()
@@ -92,6 +107,7 @@ builder.Services.AddMemoryCache();
 
 builder.Host.UseSerilog(); // usa o Serilog como logger principal
 
+builder.Services.AddScoped<ITokenProvider, HttpContextValue> ();
 
 builder.Services.AddCors(options =>
 {
@@ -102,6 +118,8 @@ builder.Services.AddCors(options =>
       .AllowAnyMethod();
     });
 });
+
+builder.Services.AddHttpContextAccessor();
 
 
 var app = builder.Build();
@@ -118,12 +136,24 @@ app.UseCors("AllowAngular");
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
+
+app.UseHangfireDashboard("/hangfire");
 
 
 app.MapControllers();
 
 MigrateDatabase();
+
+using (var scope = app.Services.CreateScope())
+{
+    var recurringJobManager = scope.ServiceProvider.GetRequiredService<IRecurringJobManager>();
+    DepedenciaInjecaoExtension.ConfigureJobs(recurringJobManager);
+}
+
+
 
 app.Run();
 

@@ -19,6 +19,8 @@ namespace controleDespesa.Application.DTOs
         public bool ReceitaFixa { get; set; } = false;
 
         public DateTime DataCadastro { get; set; } = DateTime.UtcNow;
+        public int UsuarioId { get; set; }
+
 
         public int TipoDespesaReceitaId { get; set; }
 

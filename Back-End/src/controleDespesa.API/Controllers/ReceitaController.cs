@@ -2,14 +2,17 @@
 using controleDespesa.Application.Service;
 using controleDespesa.Application.Service.Interfaces;
 using controleDespesa.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
 
 namespace controleDespesa.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [Authorize]
     public class ReceitaController : ControllerBase
     {
         private readonly IReceitaAppService _receitaAppService;
@@ -27,7 +30,8 @@ namespace controleDespesa.API.Controllers
 
             try
             {
-                var receita = await _receitaAppService.Cadastro(receitaDTO);
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+                var receita = await _receitaAppService.Cadastro(receitaDTO,userId);
 
                 return Created(string.Empty, receita);
             }

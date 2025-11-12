@@ -6,7 +6,7 @@ using controleDespesa.Application.Validation;
 using controleDespesa.Communication.Response;
 using controleDespesa.Domain.Entities;
 using controleDespesa.Domain.Interface;
-using controleDespesa.Domain.Repositorys.Usuario.Interface;
+using controleDespesa.Domain.Repositorys.Usuarios.Interface;
 using controleDespesa.Domain.Security.Tokens;
 using FluentValidation;
 using System;
@@ -56,11 +56,8 @@ namespace controleDespesa.Application.Service
                return new UsuarioResponse
             {
                 Id = usuario.Id,
-                Nome = usuario.Nome,
-                Token = new TokenResponse()
-                {
-                    acessToken = _acessTokenGenerator.GenerateToken(usuario.Identificador),
-                }
+                Nome = usuario.Nome
+                
             }; 
         }
 

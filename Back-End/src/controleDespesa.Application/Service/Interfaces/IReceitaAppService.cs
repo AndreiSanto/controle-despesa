@@ -12,7 +12,7 @@ namespace controleDespesa.Application.Service.Interfaces
     public interface IReceitaAppService
     {
 
-        public Task<Receita> Cadastro(ReceitaDTO receitaDTO);
+        public Task<Receita> Cadastro(ReceitaDTO receitaDTO, int usuarioId);
         public Task<Receita> Editar(ReceitaDTO receitaDTO);
         public Task<bool> Excluir(int id);
         public Task<Receita> BuscarReceita(int id);

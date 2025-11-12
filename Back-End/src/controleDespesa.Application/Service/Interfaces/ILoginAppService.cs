@@ -11,6 +11,8 @@ namespace controleDespesa.Application.Service.Interfaces
 {
     public interface ILoginAppService
     {
-        public Task<UsuarioResponse> FazerLogin(UsuarioDTO usuarioDTO);
+        public Task<AuthResponse> FazerLogin(LoginDTO loginDTO);
+        public Task<AuthResponse?> RefreshTokenAsync(string refreshToken);
+
     }
 }

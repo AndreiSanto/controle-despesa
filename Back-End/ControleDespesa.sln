@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "controleDespesa.Communicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppServiceTest", "tests\UseCaseTest\AppServiceTest.csproj", "{C2A22A17-B20A-467F-A61C-1904BDB05653}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "controleDespesa.Jobs", "src\Shared\controleDespesa.Jobs\controleDespesa.Jobs.csproj", "{22A7109F-4446-476A-8B57-DE39F823E0D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{C2A22A17-B20A-467F-A61C-1904BDB05653}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2A22A17-B20A-467F-A61C-1904BDB05653}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2A22A17-B20A-467F-A61C-1904BDB05653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A7109F-4446-476A-8B57-DE39F823E0D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A7109F-4446-476A-8B57-DE39F823E0D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A7109F-4446-476A-8B57-DE39F823E0D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A7109F-4446-476A-8B57-DE39F823E0D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +90,7 @@ Global
 		{00115A84-70FA-425C-9B36-91A9CE0B5D78} = {66B96381-89C4-48BF-812E-46CD342F851B}
 		{7456B89C-DC7B-4188-A47C-5D7DAA26F837} = {7E2A7FCE-7CCB-44F7-B986-67EF2F99A928}
 		{C2A22A17-B20A-467F-A61C-1904BDB05653} = {66B96381-89C4-48BF-812E-46CD342F851B}
+		{22A7109F-4446-476A-8B57-DE39F823E0D6} = {7E2A7FCE-7CCB-44F7-B986-67EF2F99A928}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C265814D-386E-4C2A-B79D-B9506E276A50}

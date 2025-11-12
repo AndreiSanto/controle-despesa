@@ -8,6 +8,7 @@ namespace controleDespesa.Communication.Response
 {
     public class TokenResponse
     {
-        public string acessToken { get; set; } = string.Empty;
+        public string AcessToken { get; set; } = string.Empty;
+        public string RefreshToken { get; set; } = string.Empty;
     }
 }

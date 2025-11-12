@@ -96,6 +96,6 @@ export class HomeComponent implements OnInit {
 
   Entrar(){
 
-    this.router.navigate(['/onboarding']);
+    this.router.navigate(['/login']);
   }
 }

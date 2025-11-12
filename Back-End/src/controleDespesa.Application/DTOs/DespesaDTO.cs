@@ -25,6 +25,8 @@ namespace controleDespesa.Application.DTOs
 
         public bool DespesaFixa { get; set; } = false;
 
+        public int UsuarioId { get; set; }
+
         public int TipoDespesaReceitaId { get; set; }
         [JsonIgnore]
         public TipoDespesaReceitaDTO? TipoDespesaReceita { get; set; }

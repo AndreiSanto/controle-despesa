@@ -13,17 +13,17 @@ import { DashboardResponse } from "../models/responses/dashboard-response";
 
 export class DashboardService {
   private apiUrl = `${environment.apiUrl}`;
-    constructor(private httpClient: HttpClient) { }  
-    
-    getDashboardData() : Observable<DashboardResponse> {
-      return this.httpClient.get<DashboardResponse>(`${this.apiUrl}/Dashboard/ResumoDashboard`);
-    }
-    getDashboardReceitasData():Observable<ReceitaResponse[]> {
-      return this.httpClient.get<ReceitaResponse[]>(`${this.apiUrl}/Dashboard/Receitas`);
-    }
+  constructor(private httpClient: HttpClient) { }
 
-    getDashboardDespesaData(): Observable<DespesaResponse[]> {
-        return this.httpClient.get<DespesaResponse[]>(`${this.apiUrl}/Dashboard/Despesas`);
-      }
-    
+  getDashboardData(): Observable<DashboardResponse> {
+    return this.httpClient.get<DashboardResponse>(`${this.apiUrl}/Dashboard/ResumoDashboard`);
+  }
+  getDashboardReceitasData(): Observable<ReceitaResponse[]> {
+    return this.httpClient.get<ReceitaResponse[]>(`${this.apiUrl}/Dashboard/Receitas`);
+  }
+
+  getDashboardDespesaData(): Observable<DespesaResponse[]> {
+    return this.httpClient.get<DespesaResponse[]>(`${this.apiUrl}/Dashboard/Despesas`);
+  }
+
 }

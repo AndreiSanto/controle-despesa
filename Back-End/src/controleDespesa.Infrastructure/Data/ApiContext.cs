@@ -21,6 +21,8 @@ namespace controleDespesa.Infrastructure.Data
         public DbSet<DespesaParcela> DespesaParcelas { get; set; }
         public DbSet<Despesa> Despesas { get; set; }
 
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApiContext).Assembly);

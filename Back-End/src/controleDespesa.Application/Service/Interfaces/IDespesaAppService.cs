@@ -12,7 +12,7 @@ namespace controleDespesa.Application.Service.Interfaces
 {
     public interface IDespesaAppService
     {
-        public Task<Despesa> Cadastro(DespesaDTO despesaDTO);
+        public Task<Despesa> Cadastro(DespesaDTO despesaDTO, int usuarioId);
 
         public Task<RetornoPaginacao<Despesa>> DespesaLista(int pagina, int totalPatina);
 
@@ -23,6 +23,8 @@ namespace controleDespesa.Application.Service.Interfaces
         public Task<bool> ExcluirAsync(int id);
 
         public Task<Despesa> BuscarDespesa(int id);
+
+        public Task<decimal> ObterTotalDoMesAsync();
 
 
     }

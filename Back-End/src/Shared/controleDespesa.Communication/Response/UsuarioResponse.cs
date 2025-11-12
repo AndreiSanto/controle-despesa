@@ -14,5 +14,8 @@ namespace controleDespesa.Communication.Response
         public int Id { get; set; }
 
         public TokenResponse Token { get; set; } = null!;
+        public TokenResponse RefreshToken { get; set; } = null!;
+
+
     }
 }

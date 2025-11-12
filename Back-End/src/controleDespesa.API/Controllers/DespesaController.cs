@@ -1,14 +1,17 @@
 ﻿using controleDespesa.Application.DTOs;
 using controleDespesa.Application.Service;
 using controleDespesa.Application.Service.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
 
 namespace controleDespesa.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [Authorize]
     public class DespesaController : ControllerBase
     {
         private readonly IDespesaAppService _despesaAppService;
@@ -25,7 +28,11 @@ namespace controleDespesa.API.Controllers
 
             try
             {
-                var despesa = await _despesaAppService.Cadastro(despesaDTO);
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+            
+                
+
+                var despesa = await _despesaAppService.Cadastro(despesaDTO, userId);
 
                 return Created(string.Empty, despesa);
             }

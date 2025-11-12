@@ -61,6 +61,15 @@ namespace controleDespesa.Infrastructure.Data.Repository
                 Nome = a.Nome
             }).ToListAsync();
         }
+
+        public async Task<decimal> ObterTotalDoMesAsync()
+        {
+            var hoje = DateTime.UtcNow;
+            var inicioMes = new DateTime(hoje.Year, hoje.Month, 1);
+            return await _apiContext.Despesas
+                .Where(d => d.DataDespesa >= inicioMes)
+                .SumAsync(d => d.ValorDespesa);
+        }
     }
     
 }

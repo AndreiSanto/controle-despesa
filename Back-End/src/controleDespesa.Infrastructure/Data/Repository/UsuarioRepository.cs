@@ -1,5 +1,5 @@
 ﻿using controleDespesa.Domain.Entities;
-using controleDespesa.Domain.Repositorys.Usuario.Interface;
+using controleDespesa.Domain.Repositorys.Usuarios.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -38,5 +38,9 @@ namespace controleDespesa.Infrastructure.Data.Repository
             return usuario;
         }
 
+        public async Task<Usuario?> GetUsuarioIdAsync(int id)
+        {
+            return await _apiContext.Usuarios.FindAsync(id);
+        }
     }
 }

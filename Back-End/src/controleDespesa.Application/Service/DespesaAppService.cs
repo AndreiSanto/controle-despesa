@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -50,12 +51,13 @@ namespace controleDespesa.Application.Service
             return await _despesaRepository.BuscarDespesa(id);
         }
 
-        public async Task<Despesa> Cadastro(DespesaDTO despesaDTO)
+        public async Task<Despesa> Cadastro(DespesaDTO despesaDTO, int UsuarioId)
         {
+            despesaDTO.UsuarioId = UsuarioId;
             ValidarDados(despesaDTO);
             var despesa = _mapper.Map<Despesa>(despesaDTO);
 
-          
+
             await _despesaRepository.Add(despesa);
 
             await _unitOfWork.Commit();
@@ -91,6 +93,11 @@ namespace controleDespesa.Application.Service
         public async Task<List<TipoDespesaReceitaResponse>> ListarCategoriasDespesa()
         {
             return await _despesaRepository.ListarCategoriaReceita();
+        }
+
+        public async Task<decimal> ObterTotalDoMesAsync()
+        {
+            return await _despesaRepository.ObterTotalDoMesAsync();
         }
 
         private void ValidarDados(DespesaDTO despesaDTO)

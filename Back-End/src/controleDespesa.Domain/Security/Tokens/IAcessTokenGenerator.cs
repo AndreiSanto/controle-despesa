@@ -8,6 +8,9 @@ namespace controleDespesa.Domain.Security.Tokens
 {
     public interface IAcessTokenGenerator
     {
-        public string GenerateToken( Guid idIdenficador);
+        public string GenerateToken( Guid idIdenficador,int idUsuario);
+
+       public string GerarRefreshToken();
+
     }
 }

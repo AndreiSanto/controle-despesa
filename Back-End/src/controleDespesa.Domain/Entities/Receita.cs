@@ -25,6 +25,11 @@ namespace controleDespesa.Domain.Entities
         
         public TipoDespesaReceita TipoDespesaReceita { get; set; } = null!;
 
+        public int UsuarioId { get; set; }
+
+        [JsonIgnore]
+        public Usuario? Usuario { get; set; }
+
 
 
 

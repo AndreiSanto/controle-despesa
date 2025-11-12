@@ -7,7 +7,7 @@ using controleDespesa.Communication.Response;
 using controleDespesa.Domain.Entities;
 using controleDespesa.Domain.Interface;
 using controleDespesa.Domain.Repositorys.Receita.Interface;
-using controleDespesa.Domain.Repositorys.Usuario.Interface;
+using controleDespesa.Domain.Repositorys.Usuarios.Interface;
 using FluentValidation;
 using Microsoft.Extensions.Caching.Memory;
 using System;
@@ -43,8 +43,9 @@ namespace controleDespesa.Application.Service
             throw new NotImplementedException();
         }
 
-        public async Task<Receita> Cadastro(ReceitaDTO receitaDTO)
+        public async Task<Receita> Cadastro(ReceitaDTO receitaDTO, int usuarioId)
         {
+            receitaDTO.UsuarioId = usuarioId;
             ValidarDadosReceita(receitaDTO);
 
             var receita = _mapper.Map<Receita>(receitaDTO);
