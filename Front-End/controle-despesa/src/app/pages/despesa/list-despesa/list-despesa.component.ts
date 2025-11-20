@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TableLazyLoadEvent } from 'primeng/table';
 import { Router } from '@angular/router';
 import { ToastModule } from 'primeng/toast';
+import { FiltroDTO } from '../../../models/dtos/filtro.dto';
 
 @Component({
   selector: 'app-list-despesa',
@@ -36,15 +37,11 @@ export class ListDespesaComponent implements OnInit {
   first: number = 0;
   rows: number = 10;
 
-  filtro = {
+  filtro: FiltroDTO = {
     descricao: '',
-    dataVencimento: '',
-    despesaFixa: '',
-    numeroParcelas: 0,
-    parcelado: true
-
+    dataCadastroInicial: null,
+    dataCadastroFinal: null
   };
-
   tiposDespesa = [
     { label: 'Todas', value: '' },
     { label: 'Despesa Fixa', value: true },
@@ -68,7 +65,7 @@ export class ListDespesaComponent implements OnInit {
 
 
 
-    this.despesaService.ListarDespesas(pagina, itensPorPagina).subscribe({
+    this.despesaService.ListarDespesas(this.filtro, pagina, itensPorPagina).subscribe({
       next: (res: any) => {
         this.despesas = res.resultado;
         this.totalRecords = res.totalItens;
@@ -82,10 +79,31 @@ export class ListDespesaComponent implements OnInit {
   }
 
 
-  buscar() {
-    console.log('Filtro aplicado:', this.filtro);
-    // Aqui você pode chamar seu service e filtrar as despesas
+  buscar(event?: TableLazyLoadEvent) {
+    this.loading = true;
+
+    this.first = event?.first ?? 0;
+    this.rows = event?.rows ?? 10;
+
+    const pagina = this.first / this.rows + 1;
+    const itensPorPagina = this.rows;
+
+   
+
+    this.despesaService.ListarDespesas(this.filtro,pagina, itensPorPagina).subscribe({
+      next: (res: any) => {
+        this.despesas = res.resultado;
+        this.totalRecords = res.totalItens;
+        this.loading = false;
+      },
+      error: (err) => {
+        this.loading = false;
+        this.messageService.add({ severity: 'error', summary: 'Erro', detail: err.error.erro || 'Erro ao listar  despesa.' });
+      }
+    });
   }
+
+
 
   visualizar(despesa: any) {
     this.router.navigate([`/app/visualizar-despesa`, despesa.id]);

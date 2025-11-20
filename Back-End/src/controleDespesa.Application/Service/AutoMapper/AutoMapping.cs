@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using controleDespesa.Application.DTOs;
 using controleDespesa.Domain.Entities;
+using controleDespesa.Domain.Value_Objects.Filter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,12 +20,14 @@ namespace controleDespesa.Application.Service.AutoMapper
                 .ForMember(dest => dest.Ativo, opt => opt.Ignore());
 
 
-            CreateMap<DespesaDTO, Despesa>()
+                CreateMap<DespesaDTO, Despesa>()
             
              .ForMember(dest => dest.TipoDespesaReceita, opt => opt.Ignore());
 
             CreateMap<ReceitaDTO, Receita>()
             .ForMember(dest => dest.TipoDespesaReceita, opt => opt.Ignore());
+
+            CreateMap<FiltroDTO, Filtro>();
 
 
 

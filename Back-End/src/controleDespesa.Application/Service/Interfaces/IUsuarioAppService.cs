@@ -13,5 +13,6 @@ namespace controleDespesa.Application.Service.Interfaces
     {
 
         public Task<UsuarioResponse> Cadastrar(UsuarioDTO usuarioDTO);
+        public Task<UsuarioResponse> GetUsuario(string usuario);
     }
 }

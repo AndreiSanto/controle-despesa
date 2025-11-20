@@ -29,9 +29,15 @@ namespace controleDespesa.Infrastructure.Extension
         public static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             AddRepositories(services);
-            AddApiContext(services, configuration);
             AddTokens(services, configuration);
 
+            if (IsUnitTestEnviroment(configuration))
+            {
+                return;
+
+            }
+            AddApiContext(services, configuration);
+           
         }
         private static void AddApiContext(IServiceCollection services, IConfiguration configuration) {
             var connectionString = configuration.GetConnectionString("DefaultConnection");
@@ -87,6 +93,10 @@ namespace controleDespesa.Infrastructure.Extension
         new JwtRefreshTokenGenerator(tempoRefresh, chaveAssinatura));
         }
 
+        private static bool IsUnitTestEnviroment(IConfiguration configuration)
+        {
+           return configuration.GetValue<bool>("InMemoryTest");
+        }
 
 
     }

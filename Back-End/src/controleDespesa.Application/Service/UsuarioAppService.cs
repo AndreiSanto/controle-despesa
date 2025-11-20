@@ -41,7 +41,14 @@ namespace controleDespesa.Application.Service
         public async  Task<UsuarioResponse> Cadastrar(UsuarioDTO usuarioDTO)
         {
 
-           ValidarDados(usuarioDTO);
+            if(await _usuarioRepository.ExisteEmailCadastrado(usuarioDTO.Email))
+            {
+                throw new ValidationException("Email Já cadastrado");
+
+            }
+            
+            
+            ValidarDados(usuarioDTO);
             var usuario = _mapper.Map<Usuario>(usuarioDTO);
             usuario.DataCriacao = DateTime.UtcNow;
             usuario.Password = _passwordEncripter.HashPassword(usuarioDTO.Password);
@@ -59,6 +66,11 @@ namespace controleDespesa.Application.Service
                 Nome = usuario.Nome
                 
             }; 
+        }
+
+        public Task<UsuarioResponse> GetUsuario(string usuario)
+        {
+            throw new NotImplementedException();
         }
 
         private void ValidarDados(UsuarioDTO usuarioDTO)

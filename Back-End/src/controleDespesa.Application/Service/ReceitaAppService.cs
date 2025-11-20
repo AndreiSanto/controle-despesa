@@ -8,6 +8,7 @@ using controleDespesa.Domain.Entities;
 using controleDespesa.Domain.Interface;
 using controleDespesa.Domain.Repositorys.Receita.Interface;
 using controleDespesa.Domain.Repositorys.Usuarios.Interface;
+using controleDespesa.Domain.Value_Objects.Filter;
 using FluentValidation;
 using Microsoft.Extensions.Caching.Memory;
 using System;
@@ -64,9 +65,10 @@ namespace controleDespesa.Application.Service
 
         }
 
-        public async Task<RetornoPaginacao<Receita>> ReceitaLista(int pagina, int totalPatina)
+        public async Task<RetornoPaginacao<Receita>> ReceitaLista(int pagina, int totalPatina, FiltroDTO filtroDTO)
         {
-            return await _receitaRepository.ReceitaLista(pagina, totalPatina);
+            var filtro = _mapper.Map<Filtro>(filtroDTO);
+            return await _receitaRepository.ReceitaLista(pagina, totalPatina,filtro);
         }
 
         public Task<Receita> Editar(ReceitaDTO receitaDTO)

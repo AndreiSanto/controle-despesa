@@ -42,28 +42,9 @@ namespace controleDespesa.API.Controllers
         }
 
 
-        [HttpPost("Login")]
-        public async Task<IActionResult> FazerLogin([FromBody] UsuarioDTO usuario)
-        {
-            try
-            {
-                var usuarioNovo = await _usuarioAppService.Cadastrar(usuario);
+        
 
 
-                return Created(string.Empty, usuarioNovo);
-            }
-            catch (ValidationException ex)
-            {
-
-                return BadRequest(new { Erro = ex.Message });
-            }
-            catch (Exception ex)
-            {
-
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    new { Erro = "Ocorreu um erro ao cadastrar o usuário.", Detalhes = ex.Message });
-            }
-        }
 
 
     }

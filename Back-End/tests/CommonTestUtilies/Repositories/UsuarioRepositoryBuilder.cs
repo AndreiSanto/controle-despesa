@@ -1,4 +1,4 @@
-﻿using controleDespesa.Domain.Repositorys.Usuario.Interface;
+﻿using controleDespesa.Domain.Repositorys.Usuarios.Interface;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -15,6 +15,11 @@ namespace CommonTestUtilies.Repositories
         public UsuarioRepositoryBuilder()
         {
             _repository = new Mock<IUsuarioRepository>();
+        }
+
+        public void ExisteEmailCadastrado(string email)
+        {
+            _repository.Setup(a => a.ExisteEmailCadastrado(email)).ReturnsAsync(true);
         }
 
         public  IUsuarioRepository Build()

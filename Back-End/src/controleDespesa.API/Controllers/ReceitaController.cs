@@ -13,6 +13,7 @@ namespace controleDespesa.API.Controllers
     [Route("[controller]")]
     [ApiController]
     [Authorize]
+
     public class ReceitaController : ControllerBase
     {
         private readonly IReceitaAppService _receitaAppService;
@@ -72,13 +73,13 @@ namespace controleDespesa.API.Controllers
         }
 
         [HttpGet("ListarReceitas")]
-        public async Task<IActionResult> ListarReceitas([FromQuery] int pagina, [FromQuery] int totalPagina)
+        public async Task<IActionResult> ListarReceitas([FromQuery] int pagina, [FromQuery] int totalPagina, [FromQuery] FiltroDTO filtro)
         {
 
 
             try
             {
-                var receitas = await _receitaAppService.ReceitaLista(pagina, totalPagina);
+                var receitas = await _receitaAppService.ReceitaLista(pagina, totalPagina, filtro);
 
                 return Ok(receitas);
             }

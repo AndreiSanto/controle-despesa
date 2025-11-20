@@ -1,6 +1,7 @@
 ﻿using controleDespesa.Communication.Response;
 using controleDespesa.Domain.Entities;
 using controleDespesa.Domain.Repositorys.Receita.Interface;
+using controleDespesa.Domain.Value_Objects.Filter;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -58,9 +59,35 @@ namespace controleDespesa.Infrastructure.Data.Repository
 
       
 
-        public async Task<RetornoPaginacao<Receita>> ReceitaLista(int pagina, int totalPatina)
+        public async Task<RetornoPaginacao<Receita>> ReceitaLista(int pagina, int totalPatina, Filtro filtro)
         {
-            var resultado = await RetornoPaginacao<Receita>.CriarAsync(pagina, totalPatina, _apiContext.Receitas.Include(a => a.TipoDespesaReceita).AsQueryable());
+
+            var query = _apiContext.Receitas.Include(a => a.TipoDespesaReceita).AsQueryable().AsNoTracking();
+
+
+            if (!string.IsNullOrWhiteSpace(filtro.Descricao))
+            {
+                query = query.Where(a => a.Descricao.Contains(filtro.Descricao));
+            }
+
+
+
+
+            if (filtro.DataCadastroInicial.HasValue)
+            {
+                query = query.Where(a => a.DataCadastro >= filtro.DataCadastroInicial.Value);
+            }
+
+
+            if (filtro.DataCadastroFinal.HasValue)
+            {
+                query = query.Where(a => a.DataCadastro <= filtro.DataCadastroFinal.Value);
+            }
+
+
+
+
+            var resultado = await RetornoPaginacao<Receita>.CriarAsync(pagina, totalPatina, query);
 
             return resultado;
         }

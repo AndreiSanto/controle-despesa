@@ -19,7 +19,7 @@ namespace controleDespesa.Application.Service.Interfaces
         public Task<List<Receita>> BuscarReceitas();
         public Task<List<TipoDespesaReceitaResponse>> ListarCategoriasReceita();
 
-        public Task<RetornoPaginacao<Receita>> ReceitaLista(int pagina, int totalPatina);
+        public Task<RetornoPaginacao<Receita>> ReceitaLista(int pagina, int totalPatina, FiltroDTO filtro);
 
         public Task AtualizarAsync(ReceitaDTO receitaDTO);
 

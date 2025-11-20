@@ -5,6 +5,7 @@ import { Observable } from "rxjs";
 import { environment } from "../environment/environment";
 import { PaginacaoResponse } from "../models/responses/paginacao-response";
 import { TipoDespesaReceitaResponse } from "../models/responses/tipo-despesa-receita-response";
+import { FiltroDTO } from "../models/dtos/filtro.dto";
 
 @Injectable({
   providedIn: 'root'
@@ -17,9 +18,33 @@ export class DespesaService {
     return this.httpClient.post<DespesaDTO>(`${this.apiUrl}/Despesa/Cadastro`, despesa);
 
   }
-  ListarDespesas(pagina: number, tamanhoPagina: number): Observable<PaginacaoResponse<DespesaDTO>> {
-    return this.httpClient.get<PaginacaoResponse<DespesaDTO>>(`${this.apiUrl}/Despesa/ListarDespesas?pagina=${pagina}&totalPagina=${tamanhoPagina}`);
-  }
+ListarDespesas(
+  filtro: FiltroDTO,
+  pagina: number,
+  tamanhoPagina: number
+): Observable<PaginacaoResponse<DespesaDTO>> {
+
+  let params: any = {
+    pagina,
+    totalPagina: tamanhoPagina
+  };
+
+  if (filtro.descricao)
+    params.descricao = filtro.descricao;
+
+  if (filtro.dataCadastroInicial)
+    params.dataCadastroInicial = filtro.dataCadastroInicial;
+
+  if (filtro.dataCadastroFinal)
+    params.dataCadastroFinal = filtro.dataCadastroFinal;
+
+  return this.httpClient.get<PaginacaoResponse<DespesaDTO>>(
+    `${this.apiUrl}/Despesa/ListarDespesas`,
+    { params }
+  );
+}
+
+
 
   ListarCategoriaDespesa(): Observable<TipoDespesaReceitaResponse[]> {
     return this.httpClient.get<TipoDespesaReceitaResponse[]>(`${this.apiUrl}/Despesa/ListarCategoriaDespesa`);

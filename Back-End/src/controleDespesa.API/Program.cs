@@ -164,3 +164,5 @@ void MigrateDatabase()
     DatabaseMigration.Migrate(conexao);
 
 }
+
+public partial class Program { }

@@ -12,6 +12,7 @@ namespace controleDespesa.API.Controllers
     [Route("[controller]")]
     [ApiController]
     [Authorize]
+
     public class DespesaController : ControllerBase
     {
         private readonly IDespesaAppService _despesaAppService;
@@ -51,13 +52,14 @@ namespace controleDespesa.API.Controllers
 
 
         [HttpGet("ListarDespesas")]
-        public async Task<IActionResult> ListarDespesas([FromQuery] int pagina, [FromQuery] int totalPagina)
+        public async Task<IActionResult> ListarDespesas([FromQuery] FiltroDTO filtro,
+[FromQuery] int pagina, [FromQuery] int totalPagina)
         {
 
 
             try
             {
-                var despesas = await _despesaAppService.DespesaLista(pagina,totalPagina);
+                var despesas = await _despesaAppService.DespesaLista(pagina,totalPagina, filtro);
 
                 return Ok(despesas);
             }

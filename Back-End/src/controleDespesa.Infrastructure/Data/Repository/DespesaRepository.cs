@@ -2,6 +2,7 @@
 using controleDespesa.Communication.Response.Despesa;
 using controleDespesa.Domain.Entities;
 using controleDespesa.Domain.Repositorys.Despesa.Interface;
+using controleDespesa.Domain.Value_Objects.Filter;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -33,12 +34,40 @@ namespace controleDespesa.Infrastructure.Data.Repository
             return await _apiContext.Despesas.FindAsync(id);
         }
 
-        public async Task<RetornoPaginacao<Despesa>> DespesaLista(int pagina, int totalPatina)
+        public async Task<RetornoPaginacao<Despesa>> DespesaLista(
+     int pagina,
+     int totalPagina,
+     Filtro filtro)
         {
-            return  await RetornoPaginacao<Despesa>.CriarAsync(pagina, totalPatina,  _apiContext.Despesas.AsQueryable());
+            var query = _apiContext.Despesas.AsQueryable();
 
             
+            if (!string.IsNullOrWhiteSpace(filtro.Descricao))
+            {
+                query = query.Where(a => a.Descricao.Contains(filtro.Descricao));
+            }
+
+            
+
+            
+            if (filtro.DataCadastroInicial.HasValue)
+            {
+                query = query.Where(a => a.DataCadastro >= filtro.DataCadastroInicial.Value);
+            }
+
+          
+            if (filtro.DataCadastroFinal.HasValue)
+            {
+                query = query.Where(a => a.DataCadastro <= filtro.DataCadastroFinal.Value);
+            }
+
+            
+            return await RetornoPaginacao<Despesa>.CriarAsync(
+                pagina,
+                totalPagina,
+                query);
         }
+
 
         public async Task<bool> ExcluirAsync(int id)
         {

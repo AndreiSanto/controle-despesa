@@ -7,6 +7,7 @@ using controleDespesa.Communication.Response.Despesa;
 using controleDespesa.Domain.Entities;
 using controleDespesa.Domain.Interface;
 using controleDespesa.Domain.Repositorys.Despesa.Interface;
+using controleDespesa.Domain.Value_Objects.Filter;
 using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
@@ -72,9 +73,11 @@ namespace controleDespesa.Application.Service
            
         }
 
-        public async Task<RetornoPaginacao<Despesa>> DespesaLista(int pagina, int totalPatina)
+        public async Task<RetornoPaginacao<Despesa>> DespesaLista(int pagina, int totalPatina, FiltroDTO filtroDto)
         {
-            return await _despesaRepository.DespesaLista(pagina, totalPatina);
+            var filtro = _mapper.Map<Filtro>(filtroDto);
+
+            return await _despesaRepository.DespesaLista(pagina, totalPatina, filtro);
            
         }
 

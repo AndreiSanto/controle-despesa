@@ -4,11 +4,13 @@
     <!-- FILTROS -->
     <div class="filtros">
         <input pInputText type="text" placeholder="Descrição" [(ngModel)]="filtro.descricao" />
-        <p-calendar [(ngModel)]="filtro.dataVencimento" dateFormat="dd/mm/yy"
-            placeholder="Data de vencimento"></p-calendar>
-        <p-dropdown [options]="tiposDespesa" [(ngModel)]="filtro.despesaFixa" placeholder="Tipo" optionLabel="label"
-            optionValue="value">
-        </p-dropdown>
+        <p-calendar [(ngModel)]="filtro.dataCadastroInicial" dateFormat="dd/mm/yy" placeholder="Data Cadastro (Início)">
+        </p-calendar>
+
+        <p-calendar [(ngModel)]="filtro.dataCadastroFinal" dateFormat="dd/mm/yy" placeholder="Data Cadastro (Fim)">
+        </p-calendar>
+
+       
 
         <p-button label="Buscar" icon="pi pi-search" (onClick)="buscar()"></p-button>
     </div>
