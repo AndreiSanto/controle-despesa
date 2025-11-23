@@ -79,7 +79,9 @@ namespace controleDespesa.API.Controllers
 
             try
             {
-                var receitas = await _receitaAppService.ReceitaLista(pagina, totalPagina, filtro);
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+
+                var receitas = await _receitaAppService.ReceitaLista(pagina, totalPagina, filtro, userId);
 
                 return Ok(receitas);
             }

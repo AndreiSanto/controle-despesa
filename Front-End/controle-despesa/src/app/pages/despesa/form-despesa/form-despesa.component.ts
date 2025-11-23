@@ -135,10 +135,7 @@ export class FormDespesaComponent implements OnInit {
       this.messageService.add({ severity: 'error', summary: 'Erro', detail: 'O número de parcelas deve ser maior que zero.' });
       return false;
     }
-    if (despesa.dataDespesa < despesa.dataCadastro) {
-      this.messageService.add({ severity: 'error', summary: 'Erro', detail: 'A data de vencimento não pode ser anterior à data de cadastro.' });
-      return false;
-    }
+    
     return true;
   }
 

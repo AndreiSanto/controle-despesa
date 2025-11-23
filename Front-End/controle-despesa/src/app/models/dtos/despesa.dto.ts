@@ -1,3 +1,6 @@
+import { TipoDespesaReceitaResponse } from "../responses/tipo-despesa-receita-response";
+import { TipoDespesaReceitaDTO } from "./tipoDespesaReceita.dto";
+
 export interface DespesaDTO {
     id: number;
     descricao: string;
@@ -9,6 +12,7 @@ export interface DespesaDTO {
     parcelado: boolean;
     despesaFixa: boolean;
     usuarioId:number;
+    tipoDespesaReceitaDTO?: TipoDespesaReceitaDTO;
 
 
 

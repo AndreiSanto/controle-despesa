@@ -73,11 +73,11 @@ namespace controleDespesa.Application.Service
            
         }
 
-        public async Task<RetornoPaginacao<Despesa>> DespesaLista(int pagina, int totalPatina, FiltroDTO filtroDto)
+        public async Task<RetornoPaginacao<DespesaListaResponse>> DespesaLista(int pagina, int totalPatina, FiltroDTO filtroDto, int usuarioId)
         {
             var filtro = _mapper.Map<Filtro>(filtroDto);
 
-            return await _despesaRepository.DespesaLista(pagina, totalPatina, filtro);
+            return await _despesaRepository.DespesaLista(pagina, totalPatina, filtro,usuarioId);
            
         }
 

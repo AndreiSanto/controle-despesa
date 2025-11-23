@@ -22,6 +22,7 @@ namespace controleDespesa.Infrastructure.Data
         public DbSet<Despesa> Despesas { get; set; }
 
         public DbSet<RefreshToken> RefreshTokens { get; set; }
+        public DbSet<MetaDespesa> MetaDespesas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

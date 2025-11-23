@@ -26,6 +26,7 @@ namespace controleDespesa.Application.Extension
             services.AddScoped<IReceitaAppService, ReceitaAppService>();
             services.AddScoped<IDashboardAppService, DashboardAppService>();
             services.AddScoped<ILoginAppService, LoginAppService>();
+            services.AddScoped<IMetaDespesaAppService, MetaDespesaAppService>();
             services.AddScoped<VerificarMetaMensalJob>();
 
             services.AddScoped<PasswordEncripter>();

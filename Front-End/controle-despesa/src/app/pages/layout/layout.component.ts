@@ -21,8 +21,8 @@ export class LayoutComponent {
   menuItems: MenuItem[];
   messages: Message[] | undefined;
 
-
   constructor(private router: Router, private messageService: MessageService) {
+
     this.menuItems = [
       {
         label: 'Dashboard',

@@ -49,7 +49,7 @@ namespace controleDespesa.Infrastructure.Data.Repository
 
         public async Task<List<TipoDespesaReceitaResponse>> ListarCategoriaReceita()
         {
-            return await _apiContext.TipoDespesaReceitas.Where(b => b.Ativo && b.Tipo == Domain.Enums.TipoDespesaReceitaEnum.RECEITA)
+            return await _apiContext.TipoDespesaReceitas.Where(b => b.Ativo && b.Tipo == Domain.Enums.TipoDespesaReceitaEnum.RECEITA).AsNoTracking()
             .Select(a => new TipoDespesaReceitaResponse()
             {
                 Id = a.Id,
@@ -59,10 +59,10 @@ namespace controleDespesa.Infrastructure.Data.Repository
 
       
 
-        public async Task<RetornoPaginacao<Receita>> ReceitaLista(int pagina, int totalPatina, Filtro filtro)
+        public async Task<RetornoPaginacao<ReceitaListaResponse>> ReceitaLista(int pagina, int totalPatina, Filtro filtro, int usuarioId)
         {
 
-            var query = _apiContext.Receitas.Include(a => a.TipoDespesaReceita).AsQueryable().AsNoTracking();
+            var query = _apiContext.Receitas.Where(a=> a.UsuarioId == usuarioId).Include(a => a.TipoDespesaReceita).AsQueryable().AsNoTracking();
 
 
             if (!string.IsNullOrWhiteSpace(filtro.Descricao))
@@ -83,13 +83,22 @@ namespace controleDespesa.Infrastructure.Data.Repository
             {
                 query = query.Where(a => a.DataCadastro <= filtro.DataCadastroFinal.Value);
             }
+            var queryLista = query.Select(a => new ReceitaListaResponse
+            {
+                Id = a.Id,
+                Descricao = a.Descricao,
+                DataCadastro = a.DataCadastro,
+                Tipo = a.TipoDespesaReceita.Nome,
+                ValorReceita = a.Valor
+
+            });
 
 
 
 
-            var resultado = await RetornoPaginacao<Receita>.CriarAsync(pagina, totalPatina, query);
+            return await RetornoPaginacao<ReceitaListaResponse>.CriarAsync(pagina, totalPatina, queryLista);
 
-            return resultado;
+            
         }
     }
 }

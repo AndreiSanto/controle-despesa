@@ -14,7 +14,7 @@ namespace controleDespesa.Application.Service.Interfaces
     {
         public Task<Despesa> Cadastro(DespesaDTO despesaDTO, int usuarioId);
 
-        public Task<RetornoPaginacao<Despesa>> DespesaLista(int pagina, int totalPatina, FiltroDTO filtro);
+        public Task<RetornoPaginacao<DespesaListaResponse>> DespesaLista(int pagina, int totalPatina, FiltroDTO filtro, int usuarioId);
 
         public Task<List<TipoDespesaReceitaResponse>> ListarCategoriasDespesa();
 

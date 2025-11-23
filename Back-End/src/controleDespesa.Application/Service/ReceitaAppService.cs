@@ -65,10 +65,10 @@ namespace controleDespesa.Application.Service
 
         }
 
-        public async Task<RetornoPaginacao<Receita>> ReceitaLista(int pagina, int totalPatina, FiltroDTO filtroDTO)
+        public async Task<RetornoPaginacao<ReceitaListaResponse>> ReceitaLista(int pagina, int totalPatina, FiltroDTO filtroDTO, int usuarioId)
         {
             var filtro = _mapper.Map<Filtro>(filtroDTO);
-            return await _receitaRepository.ReceitaLista(pagina, totalPatina,filtro);
+            return await _receitaRepository.ReceitaLista(pagina, totalPatina,filtro,usuarioId);
         }
 
         public Task<Receita> Editar(ReceitaDTO receitaDTO)

@@ -24,27 +24,27 @@ namespace controleDespesa.Application.Service
             _cache = cache;
         }
 
-        public async Task<DashboardResponse> GetDashboard()
+        public async Task<DashboardResponse> GetDashboard(int idUsuario)
         {
             var cacheKey = "dashboard_cache";
 
             if (!_cache.TryGetValue(cacheKey, out DashboardResponse dashboard))
             {
-                dashboard = await _dashboardRepository.GetDashboard();
+                dashboard = await _dashboardRepository.GetDashboard(idUsuario);
                 _cache.Set(cacheKey, dashboard, TimeSpan.FromMinutes(10));
             }
 
             return dashboard;
         }
 
-        public async Task<List<DespesaResponse>> GetDashboardDespesa()
+        public async Task<List<DespesaResponse>> GetDashboardDespesa(int idUsuario)
         {
-            return await _dashboardRepository.GetDashboardDespesa();
+            return await _dashboardRepository.GetDashboardDespesa(idUsuario);
         }
 
-        public async Task<List<ReceitaResponse>> GetDashboardReceita()
+        public async Task<List<ReceitaResponse>> GetDashboardReceita(int idUsuario)
         {
-            return await _dashboardRepository.GetDashboardReceita();
+            return await _dashboardRepository.GetDashboardReceita(idUsuario);
         }
     }
 }

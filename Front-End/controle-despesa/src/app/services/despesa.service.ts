@@ -6,6 +6,7 @@ import { environment } from "../environment/environment";
 import { PaginacaoResponse } from "../models/responses/paginacao-response";
 import { TipoDespesaReceitaResponse } from "../models/responses/tipo-despesa-receita-response";
 import { FiltroDTO } from "../models/dtos/filtro.dto";
+import { DespesaListaResponse } from "../models/responses/despesa-lista-response";
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +23,7 @@ ListarDespesas(
   filtro: FiltroDTO,
   pagina: number,
   tamanhoPagina: number
-): Observable<PaginacaoResponse<DespesaDTO>> {
+): Observable<PaginacaoResponse<DespesaListaResponse>> {
 
   let params: any = {
     pagina,
@@ -38,7 +39,7 @@ ListarDespesas(
   if (filtro.dataCadastroFinal)
     params.dataCadastroFinal = filtro.dataCadastroFinal;
 
-  return this.httpClient.get<PaginacaoResponse<DespesaDTO>>(
+  return this.httpClient.get<PaginacaoResponse<DespesaListaResponse>>(
     `${this.apiUrl}/Despesa/ListarDespesas`,
     { params }
   );

@@ -8,6 +8,7 @@ import { jwtDecode } from 'jwt-decode';
 interface AuthResponse {
   token: string;
   refreshToken: string;
+
 }
 
 interface JwtPayload {
@@ -32,6 +33,7 @@ export class AuthService {
         tap(res => {
           localStorage.setItem('access_token', res.token);
           localStorage.setItem('refresh_token', res.refreshToken);
+
         })
       );
   }

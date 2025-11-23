@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
 
 namespace controleDespesa.API.Controllers
 {
@@ -26,7 +27,9 @@ namespace controleDespesa.API.Controllers
 
             try
             {
-                var dashboard = await _dashboardService.GetDashboard();
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+
+                var dashboard = await _dashboardService.GetDashboard(userId);
 
                 return Ok(dashboard);
             }
@@ -51,7 +54,9 @@ namespace controleDespesa.API.Controllers
 
             try
             {
-                var dashboard = await _dashboardService.GetDashboardReceita();
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+
+                var dashboard = await _dashboardService.GetDashboardReceita(userId);
 
                 return Ok(dashboard);
             }
@@ -76,7 +81,9 @@ namespace controleDespesa.API.Controllers
 
             try
             {
-                var dashboard = await _dashboardService.GetDashboardDespesa();
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+
+                var dashboard = await _dashboardService.GetDashboardDespesa(userId);
 
                 return Ok(dashboard);
             }

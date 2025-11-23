@@ -18,15 +18,15 @@ namespace controleDespesa.Infrastructure.Data.Repository
             _context = context;
         }
 
-        public async Task<DashboardResponse> GetDashboard()
+        public async Task<DashboardResponse> GetDashboard(int idUsuario)
         {
             var dataHoje = DateTime.Now;
             var totalDespesa = await _context.Despesas.AsNoTracking().Where(a => a.DataDespesa.Month == dataHoje.Month
-            && a.DataDespesa.Year == dataHoje.Year 
+            && a.DataDespesa.Year == dataHoje.Year && a.UsuarioId == idUsuario
             ).Select(a => a.ValorDespesa).SumAsync();
 
             var totalReceita = await _context.Receitas.AsNoTracking().
-                Where(a => a.DataCadastro.Month == dataHoje.Month && a.DataCadastro.Year == dataHoje.Year).
+                Where(a => a.DataCadastro.Month == dataHoje.Month && a.DataCadastro.Year == dataHoje.Year && a.UsuarioId == idUsuario).
                 Select(a => a.Valor).SumAsync();
 
 
@@ -36,7 +36,7 @@ namespace controleDespesa.Infrastructure.Data.Repository
                    join tipo in _context.TipoDespesaReceitas.AsNoTracking()
                        on despesa.TipoDespesaReceitaId equals tipo.Id
                    where despesa.DataDespesa.Month == dataHoje.Month
-                      && despesa.DataDespesa.Year == dataHoje.Year
+                      && despesa.DataDespesa.Year == dataHoje.Year && despesa.UsuarioId == idUsuario
                    orderby despesa.DataDespesa descending
                    select new DespesaResponse
                    {
@@ -56,7 +56,7 @@ namespace controleDespesa.Infrastructure.Data.Repository
                join tipo in _context.TipoDespesaReceitas.AsNoTracking()
                    on receita.TipoDespesaReceitaId equals tipo.Id
                where receita.DataCadastro.Month == dataHoje.Month
-                  && receita.DataCadastro.Year == dataHoje.Year
+                  && receita.DataCadastro.Year == dataHoje.Year && receita.UsuarioId == idUsuario
                orderby receita.DataCadastro descending
                select new ReceitaResponse
                {
@@ -71,12 +71,20 @@ namespace controleDespesa.Infrastructure.Data.Repository
            .Take(3)
            .ToListAsync();
 
+            var metaMes = await _context.MetaDespesas
+                    .Where(a => a.UsuarioId == idUsuario)
+                    .Select(a => a.Valor)
+                     .SingleOrDefaultAsync();
+
+            
+
+
 
 
 
             return new DashboardResponse()
             {
-                MetaMes = 10,
+                MetaMes = metaMes == 0 ? 0: metaMes,
                 TotalDespesas = totalDespesa,
                 TotalReceitas = totalReceita,
                 DespesaResponses = despesas,
@@ -87,7 +95,7 @@ namespace controleDespesa.Infrastructure.Data.Repository
 
         }
 
-        public async Task<List<DespesaResponse>> GetDashboardDespesa()
+        public async Task<List<DespesaResponse>> GetDashboardDespesa(int idUsuario)
         {
             var dataHoje = DateTime.Now;
 
@@ -96,7 +104,7 @@ namespace controleDespesa.Infrastructure.Data.Repository
                 join tipo in _context.TipoDespesaReceitas.AsNoTracking()
                     on despesa.TipoDespesaReceitaId equals tipo.Id
                 where despesa.DataDespesa.Month == dataHoje.Month
-                   && despesa.DataDespesa.Year == dataHoje.Year
+                   && despesa.DataDespesa.Year == dataHoje.Year && despesa.UsuarioId == idUsuario
                 orderby despesa.DataDespesa descending
                 select new DespesaResponse
                 {
@@ -115,7 +123,7 @@ namespace controleDespesa.Infrastructure.Data.Repository
         }
 
 
-        public async Task<List<ReceitaResponse>> GetDashboardReceita()
+        public async Task<List<ReceitaResponse>> GetDashboardReceita(int idUsuario)
         {
             var dataHoje = DateTime.Now;
             var receitas = await (
@@ -123,7 +131,7 @@ namespace controleDespesa.Infrastructure.Data.Repository
                 join tipo in _context.TipoDespesaReceitas.AsNoTracking()
                     on receita.TipoDespesaReceitaId equals tipo.Id
                 where receita.DataCadastro.Month == dataHoje.Month
-                   && receita.DataCadastro.Year == dataHoje.Year
+                   && receita.DataCadastro.Year == dataHoje.Year && receita.UsuarioId == idUsuario
                 orderby receita.DataCadastro descending
                 select new ReceitaResponse
                 {

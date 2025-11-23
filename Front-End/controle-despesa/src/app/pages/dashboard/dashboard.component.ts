@@ -31,11 +31,12 @@ export class DashboardComponent implements OnInit {
   percentualGasto: number = 0;   // Percentual do gasto em relação à meta
 
   ngOnInit(): void {
-    // 🔹 Dados fictícios
     
 
+
     this.loadDashboardData();
-  
+    
+
 
     // 🔹 Gráfico de fluxo (entrada x saída)
     this.graficoFluxo = {
@@ -48,18 +49,16 @@ export class DashboardComponent implements OnInit {
       ]
     };
   }
-
-  loadReceitas() {
-    this.dashboardService.getDashboardReceitasData().subscribe((receitas) => {
-      this.ultimasReceitas = receitas;
-    });
+  lodCalculoPercentualGasto() {
+    if (this.metaDespesaMes > 0) {
+      const percentual = Math.ceil(
+        (this.totalDespesasMes / this.metaDespesaMes) * 100
+      );
+ this.percentualGasto = Math.min(percentual, 100);
+    }
   }
 
-  loadDespesas() {
-    this.dashboardService.getDashboardDespesaData().subscribe((despesas) => {
-      this.ultimasDespesas = despesas;
-    });
-  }
+
   loadDashboardData() {
     this.dashboardService.getDashboardData().subscribe((data) => {
       this.totalDespesasMes = data.totalDespesas;
@@ -68,6 +67,7 @@ export class DashboardComponent implements OnInit {
       this.ultimasReceitas = data.receitaResponses;
       this.ultimasDespesas = data.despesaResponses;
       this.saldo = this.totalReceitasMes - this.totalDespesasMes;
+      this.lodCalculoPercentualGasto();
     });
   }
 }

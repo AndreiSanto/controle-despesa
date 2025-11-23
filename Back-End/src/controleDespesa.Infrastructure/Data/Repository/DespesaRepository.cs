@@ -34,12 +34,12 @@ namespace controleDespesa.Infrastructure.Data.Repository
             return await _apiContext.Despesas.FindAsync(id);
         }
 
-        public async Task<RetornoPaginacao<Despesa>> DespesaLista(
+        public async Task<RetornoPaginacao<DespesaListaResponse>> DespesaLista(
      int pagina,
      int totalPagina,
-     Filtro filtro)
+     Filtro filtro,int idUsuario)
         {
-            var query = _apiContext.Despesas.AsQueryable();
+            var query = _apiContext.Despesas.Where(a => a.UsuarioId == idUsuario).Include(p => p.TipoDespesaReceita).AsQueryable().AsNoTracking();
 
             
             if (!string.IsNullOrWhiteSpace(filtro.Descricao))
@@ -61,11 +61,22 @@ namespace controleDespesa.Infrastructure.Data.Repository
                 query = query.Where(a => a.DataCadastro <= filtro.DataCadastroFinal.Value);
             }
 
+            var queryResponse = query.Select(a => new DespesaListaResponse
+            {
+                DataCadastro = a.DataCadastro,
+                Tipo = a.TipoDespesaReceita.Nome,
+                Id = a.Id,
+                ValorDespesa = a.ValorDespesa,
+                Descricao = a.Descricao
+                
+
+            });
+
             
-            return await RetornoPaginacao<Despesa>.CriarAsync(
+            return await RetornoPaginacao<DespesaListaResponse>.CriarAsync(
                 pagina,
                 totalPagina,
-                query);
+                queryResponse);
         }
 
 
@@ -83,7 +94,7 @@ namespace controleDespesa.Infrastructure.Data.Repository
 
         public async Task<List<TipoDespesaReceitaResponse>> ListarCategoriaReceita()
         {
-            return await _apiContext.TipoDespesaReceitas.Where(b => b.Ativo && b.Tipo == Domain.Enums.TipoDespesaReceitaEnum.DESPESA)
+            return await _apiContext.TipoDespesaReceitas.Where(b => b.Ativo && b.Tipo == Domain.Enums.TipoDespesaReceitaEnum.DESPESA).AsNoTracking()
             .Select(a => new TipoDespesaReceitaResponse()
             {
                 Id = a.Id,

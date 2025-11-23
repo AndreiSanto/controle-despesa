@@ -34,12 +34,13 @@ export class LoginComponent implements OnInit {
     const senha = this.form.get('password')?.value;
     this.authService.login(email, senha).subscribe({
       next: (res) => {
-        // Mensagem de sucesso
+       
         this.messageService.add({
           severity: 'success',
           summary: 'Sucesso',
           detail: 'Login realizado com sucesso!'
         });
+
 
       
         this.router.navigate(['/onboarding']);

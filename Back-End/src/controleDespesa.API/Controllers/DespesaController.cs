@@ -59,7 +59,9 @@ namespace controleDespesa.API.Controllers
 
             try
             {
-                var despesas = await _despesaAppService.DespesaLista(pagina,totalPagina, filtro);
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+
+                var despesas = await _despesaAppService.DespesaLista(pagina,totalPagina, filtro,userId);
 
                 return Ok(despesas);
             }

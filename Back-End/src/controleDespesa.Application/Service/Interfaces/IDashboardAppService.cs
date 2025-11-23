@@ -11,10 +11,10 @@ namespace controleDespesa.Application.Service.Interfaces
     public interface IDashboardAppService
     {
 
-        public Task<DashboardResponse> GetDashboard();
+        public Task<DashboardResponse> GetDashboard(int idUsuario);
 
-        public Task<List<ReceitaResponse>> GetDashboardReceita();
+        public Task<List<ReceitaResponse>> GetDashboardReceita(int idUsuario);
 
-        public Task<List<DespesaResponse>> GetDashboardDespesa();
+        public Task<List<DespesaResponse>> GetDashboardDespesa(int idUsuario);
     }
 }

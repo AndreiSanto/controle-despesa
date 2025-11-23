@@ -13,7 +13,7 @@ namespace controleDespesa.Domain.Repositorys.Receita.Interface
         public Task Add(Entities.Receita receita);
         public Task<List<TipoDespesaReceitaResponse>> ListarCategoriaReceita();
 
-        public Task<RetornoPaginacao<Entities.Receita>> ReceitaLista(int pagina, int totalPatina, Filtro filtro);
+        public Task<RetornoPaginacao<ReceitaListaResponse>> ReceitaLista(int pagina, int totalPatina, Filtro filtro, int usuarioId);
 
         public Task<bool> Excluir(int id);
         public Task<Entities.Receita> BuscarReceita(int id);

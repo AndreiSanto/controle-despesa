@@ -142,6 +142,15 @@ namespace controleDespesa.Exceptions {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a O valor da meta da despesa tem que ser maior do 0..
+        /// </summary>
+        public static string VALOR_META_DESPESA_INVALIDO {
+            get {
+                return ResourceManager.GetString("VALOR_META_DESPESA_INVALIDO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a O valor da receita tem que ser maior do que 0.
         /// </summary>
         public static string VALOR_RECEITA_INVALIDO {

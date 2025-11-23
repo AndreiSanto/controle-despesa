@@ -5,6 +5,7 @@ import { ReceitaDTO } from "../models/dtos/receita.dto";
 import { Observable } from "rxjs";
 import { TipoDespesaReceitaResponse } from "../models/responses/tipo-despesa-receita-response";
 import { PaginacaoResponse } from "../models/responses/paginacao-response";
+import { ReceitaListaResponse } from "../models/responses/receita-lista-response";
 
 @Injectable({
   providedIn: 'root'
@@ -22,8 +23,8 @@ export class ReceitaService {
     return this.httpClient.get<TipoDespesaReceitaResponse[]>(`${this.apiUrl}/Receita/ListarCategoriaReceita`);
   }
 
-  ListarReceitas(pagina: number, tamanhoPagina: number): Observable<PaginacaoResponse<ReceitaDTO>> {
-    return this.httpClient.get<PaginacaoResponse<ReceitaDTO>>(`${this.apiUrl}/Receita/ListarReceitas?pagina=${pagina}&totalPagina=${tamanhoPagina}`);
+  ListarReceitas(pagina: number, tamanhoPagina: number): Observable<PaginacaoResponse<ReceitaListaResponse>> {
+    return this.httpClient.get<PaginacaoResponse<ReceitaListaResponse>>(`${this.apiUrl}/Receita/ListarReceitas?pagina=${pagina}&totalPagina=${tamanhoPagina}`);
   }
 
   obterPorId(id: number): Observable<ReceitaDTO> {

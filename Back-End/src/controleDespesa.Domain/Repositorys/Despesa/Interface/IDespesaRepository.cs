@@ -13,7 +13,7 @@ namespace controleDespesa.Domain.Repositorys.Despesa.Interface
     public  interface IDespesaRepository
     {
         public Task Add(Entities.Despesa despesa);
-        public Task<RetornoPaginacao<Entities.Despesa>> DespesaLista(int pagina, int totalPatina, Filtro filtro);
+        public Task<RetornoPaginacao<DespesaListaResponse>> DespesaLista(int pagina, int totalPatina, Filtro filtro,int idUsuario);
         public Task<List<TipoDespesaReceitaResponse>> ListarCategoriaReceita();
 
         public void AtualizarAsync(Entities.Despesa despesa);

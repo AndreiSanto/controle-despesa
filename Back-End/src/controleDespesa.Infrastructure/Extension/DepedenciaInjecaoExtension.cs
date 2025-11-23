@@ -2,6 +2,7 @@
 using controleDespesa.Domain.Repositorys.Dashboard.Interface;
 using controleDespesa.Domain.Repositorys.Despesa.Interface;
 using controleDespesa.Domain.Repositorys.Login.Interface;
+using controleDespesa.Domain.Repositorys.MetaDespesas.Interface;
 using controleDespesa.Domain.Repositorys.Receita.Interface;
 using controleDespesa.Domain.Repositorys.TipoDespesaReceita;
 using controleDespesa.Domain.Repositorys.Token;
@@ -61,6 +62,7 @@ namespace controleDespesa.Infrastructure.Extension
             services.AddScoped<IDashboardRepository, DashboardRepository>();
             services.AddScoped<ILoginRepository, LoginUsuarioRepository>();
             services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
+            services.AddScoped<IMetaDespesaRepository, MetaDespesaRepository>();
 
 
         }

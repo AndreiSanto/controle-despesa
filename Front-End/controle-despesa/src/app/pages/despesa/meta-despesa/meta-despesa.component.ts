@@ -7,6 +7,9 @@ import { ProgressBarModule } from 'primeng/progressbar';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { Router } from '@angular/router';
+import { MetaDespesaService } from '../../../services/metaDespesa.service';
+import { Meta } from '@angular/platform-browser';
+import { MetaDespesaDTO } from '../../../models/dtos/meta-despesa.dto';
 
 @Component({
   selector: 'app-meta-despesa',
@@ -25,11 +28,13 @@ import { Router } from '@angular/router';
 })
 export class MetaDespesaComponent implements OnInit {
 
-  meta = {
-    mes:0,
-    ano: new Date().getFullYear(),
-    valorMeta: 0
-  };
+meta: MetaDespesaDTO = {
+  mes: 0,
+  ano: new Date().getFullYear(),
+  valor: 0,
+  ativo: true
+};
+
 
   progresso = 0;
   totalGasto = 0; // simulando gasto atual
@@ -49,7 +54,7 @@ export class MetaDespesaComponent implements OnInit {
     { label: 'Dezembro', value: 12 }
   ];
 
-  constructor(private messageService: MessageService, private router: Router) {}
+  constructor(private messageService: MessageService, private router: Router,private metaService:MetaDespesaService) {}
 
   ngOnInit(): void {
     this.calcularProgresso();
@@ -57,8 +62,8 @@ export class MetaDespesaComponent implements OnInit {
   }
 
   calcularProgresso() {
-    if (this.meta.valorMeta > 0) {
-      this.progresso = Math.min((this.totalGasto / this.meta.valorMeta) * 100, 100);
+    if (this.meta.valor > 0) {
+      this.progresso = Math.min((this.totalGasto / this.meta.valor) * 100, 100);
     } else {
       this.progresso = 0;
     }
@@ -70,14 +75,36 @@ export class MetaDespesaComponent implements OnInit {
     this.calcularProgresso();
   }
 
-  salvar() {
-    if (!this.meta.mes || !this.meta.ano || this.meta.valorMeta <= 0) {
-      this.messageService.add({ severity: 'error', summary: 'Erro', detail: 'Preencha todos os campos corretamente.' });
-      return;
-    }
-
-    this.messageService.add({ severity: 'success', summary: 'Sucesso', detail: 'Meta salva com sucesso!' });
+ salvar() {
+  if (!this.meta.mes || !this.meta.ano || this.meta.valor <= 0) {
+    this.messageService.add({ 
+      severity: 'error', 
+      summary: 'Erro', 
+      detail: 'Preencha todos os campos corretamente.' 
+    });
+    return;
   }
+
+  this.metaService.cadastro(this.meta).subscribe({
+    next: () => {
+      this.messageService.add({
+        severity: 'success',
+        summary: 'Sucesso',
+        detail: 'Meta salva com sucesso!'
+      });
+
+      this.router.navigate(['/dashboard']); // opcional
+    },
+    error: (err) => {
+      this.messageService.add({
+        severity: 'error',
+        summary: 'Erro',
+        detail: err?.error?.erro || 'Ocorreu um erro ao salvar a meta.'
+      });
+    }
+  });
+}
+
   loadData(){
    const hoje = new Date();
   const mesAtual = hoje.getMonth() + 1;

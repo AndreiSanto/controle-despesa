@@ -29,7 +29,6 @@
             </div>
         </div>
 
-        <!-- Exibe data de vencimento apenas se não for parcelado -->
         <div class="form-group">
             <label for="dataDespesa">Data da Despesa</label>
             <p-calendar id="dataDespesa" name="dataDespesa" [(ngModel)]="despesa.dataDespesa"
@@ -37,12 +36,7 @@
         </div>
 
 
-        <!-- Checkbox Despesa Fixa -->
-        <div class="form-check">
-            <input type="checkbox" id="despesaFixa" name="despesaFixa" [(ngModel)]="despesa.despesaFixa"
-                [disabled]="formType === 'view'" />
-            <label for="despesaFixa">Despesa Fixa</label>
-        </div>
+ 
 
         <button type="submit" class="btn-salvar" [disabled]="formType === FormType.View">
             Salvar

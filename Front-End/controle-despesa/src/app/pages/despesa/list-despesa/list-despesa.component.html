@@ -24,11 +24,8 @@
             <tr>
                 <th>Descrição</th>
                 <th>Valor (R$)</th>
-                <th>Data de Cadastro</th>
-                <th>Data de Vencimento</th>
-                <th>Despesa Fixa</th>
-                <th>Parcelado</th>
-                <th>Nº Parcelas</th>
+                <th>Data da Despesa</th>
+                <th>Tipo de Despesa</th>
                 <th style="text-align: center;">Ações</th>
             </tr>
         </ng-template>
@@ -38,12 +35,9 @@
                 <td>{{ despesa.descricao }}</td>
                 <td>{{ despesa.valorDespesa | currency:'BRL' }}</td>
                 <td>{{ despesa.dataCadastro | date:'dd/MM/yyyy' }}</td>
-                <td>{{ despesa.dataVencimento | date:'dd/MM/yyyy' }}</td>
-                <td>{{ despesa.despesaFixa ? 'Sim' : 'Não' }}</td>
-                <td>{{ despesa.parcelado ? 'Sim' : 'Não' }}</td>
-                <td>
-                    {{ despesa.parcelado ? despesa.numeroParcelas : 'Nenhuma' }}
-                </td>
+                <td>{{ despesa.tipo }}</td>
+               
+                
                 <td class="acoes">
                     <p-button icon="pi pi-eye" class="p-button-rounded p-button-success p-button-sm"
                         (onClick)="visualizar(despesa)"></p-button>

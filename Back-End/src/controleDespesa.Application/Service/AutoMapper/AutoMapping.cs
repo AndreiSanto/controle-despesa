@@ -28,6 +28,7 @@ namespace controleDespesa.Application.Service.AutoMapper
             .ForMember(dest => dest.TipoDespesaReceita, opt => opt.Ignore());
 
             CreateMap<FiltroDTO, Filtro>();
+            CreateMap<MetaDespesaDTO, MetaDespesa>();
 
 
 

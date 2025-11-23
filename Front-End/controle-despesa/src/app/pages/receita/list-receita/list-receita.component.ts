@@ -15,6 +15,7 @@ import { TableLazyLoadEvent } from 'primeng/table';
 import { ReceitaDTO } from '../../../models/dtos/receita.dto';
 import { ReceitaService } from '../../../services/receita.service';
 import { Router } from '@angular/router';
+import { ReceitaListaResponse } from '../../../models/responses/receita-lista-response';
 @Component({
   selector: 'app-list-receita',
   standalone: true,
@@ -26,7 +27,7 @@ import { Router } from '@angular/router';
 })
 export class ListReceitaComponent {
 
-  receitas: ReceitaDTO[] = [];
+  receitas: ReceitaListaResponse[] = [];
   totalRecords: number = 0;
   loading: boolean = true;
   first: number = 0;

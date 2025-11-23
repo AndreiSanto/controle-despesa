@@ -16,6 +16,7 @@ import { TableLazyLoadEvent } from 'primeng/table';
 import { Router } from '@angular/router';
 import { ToastModule } from 'primeng/toast';
 import { FiltroDTO } from '../../../models/dtos/filtro.dto';
+import { DespesaListaResponse } from '../../../models/responses/despesa-lista-response';
 
 @Component({
   selector: 'app-list-despesa',
@@ -31,7 +32,7 @@ import { FiltroDTO } from '../../../models/dtos/filtro.dto';
 })
 export class ListDespesaComponent implements OnInit {
 
-  despesas: DespesaDTO[] = [];
+  despesas: DespesaListaResponse[] = [];
   totalRecords: number = 0;
   loading: boolean = true;
   first: number = 0;

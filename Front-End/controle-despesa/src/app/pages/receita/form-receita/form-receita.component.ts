@@ -109,9 +109,14 @@ if (this.formType === FormType.View) return;
       this.messageService.add({ severity: 'error', summary: 'Erro', detail: 'O valor deve ser maior que zero.', life: 5000 });
       return false;
     }
+    if (!receita.tipoDespesaReceitaId) {
+      this.messageService.add({ severity: 'error', summary: 'Erro', detail: 'O tipo de despesa é obrigatório.' });
+      return false;
+    }
 
     return true;
-  }
+  
+}
 
 
   loadDropdownData() {

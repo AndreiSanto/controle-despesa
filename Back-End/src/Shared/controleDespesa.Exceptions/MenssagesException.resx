@@ -144,6 +144,9 @@
   <data name="VALOR_DESPESA_INVALIDO" xml:space="preserve">
     <value>O valor da despesa tem que ser maior do que 0</value>
   </data>
+  <data name="VALOR_META_DESPESA_INVALIDO" xml:space="preserve">
+    <value>O valor da meta da despesa tem que ser maior do 0.</value>
+  </data>
   <data name="VALOR_RECEITA_INVALIDO" xml:space="preserve">
     <value>O valor da receita tem que ser maior do que 0</value>
   </data>
