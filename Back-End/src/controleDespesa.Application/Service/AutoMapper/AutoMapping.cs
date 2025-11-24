@@ -29,6 +29,8 @@ namespace controleDespesa.Application.Service.AutoMapper
 
             CreateMap<FiltroDTO, Filtro>();
             CreateMap<MetaDespesaDTO, MetaDespesa>();
+            CreateMap<MetaDespesa, MetaDespesaDTO>();
+
 
 
 

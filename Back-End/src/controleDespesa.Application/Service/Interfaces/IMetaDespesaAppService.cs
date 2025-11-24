@@ -12,7 +12,7 @@ namespace controleDespesa.Application.Service.Interfaces
     {
         public Task<MetaDespesaDTO> Cadastro(MetaDespesaDTO metaDespesaDTO,int usuarioId); 
         public Task<MetaDespesaDTO> Alterar(MetaDespesaDTO metaDespesaDTO); 
-        public Task<MetaDespesaDTO> Desativar(MetaDespesaDTO metaDespesaDTO); 
-        public Task<MetaDespesaDTO> Ativar(MetaDespesaDTO metaDespesaDTO); 
+        
+        public Task<MetaDespesaDTO?> BuscarMeta(int UsuarioId); 
     }
 }

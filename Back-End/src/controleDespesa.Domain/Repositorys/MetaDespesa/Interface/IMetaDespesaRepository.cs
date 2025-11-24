@@ -11,6 +11,9 @@ namespace controleDespesa.Domain.Repositorys.MetaDespesas.Interface
     {
         public Task Cadastro(MetaDespesa metaDespesa);
         public MetaDespesa Alterar(MetaDespesa metaDespesa);
-        
+
+        public Task<MetaDespesa?> BuscarMeta(int UsuarioId);
+
+
     }
 }

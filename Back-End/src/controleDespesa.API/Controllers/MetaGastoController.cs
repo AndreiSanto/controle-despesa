@@ -22,7 +22,7 @@ namespace controleDespesa.API.Controllers
         public async Task<IActionResult> Cadastrar([FromBody] MetaDespesaDTO metaDespesaDTO)
         {
             try {
-                var userId = 12;
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
 
                 var metadDespesa = await _metaDespesaAppService.Cadastro(metaDespesaDTO, userId);
 
@@ -41,6 +41,61 @@ namespace controleDespesa.API.Controllers
                     new { Erro = "Ocorreu um erro ao cadastrar a meta de Despesa.", Detalhes = ex.Message });
             }
 
+        }
+
+        [HttpPost("Alterar")]
+        public async Task<IActionResult> Alterar([FromBody] MetaDespesaDTO metaDespesaDTO)
+        {
+            try
+            {
+
+                var metadDespesa = await _metaDespesaAppService.Alterar(metaDespesaDTO);
+
+
+                return Ok(metadDespesa);
+            }
+            catch (ValidationException ex)
+            {
+
+                return BadRequest(new { Erro = ex.Message });
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    new { Erro = "Ocorreu um erro ao cadastrar a meta de Despesa.", Detalhes = ex.Message });
+            }
+
+        }
+
+        [HttpGet("BuscarMeta")]
+        public async Task<IActionResult> BuscarMeta()
+        {
+
+
+            try
+            {
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+
+
+                var meta = await _metaDespesaAppService.BuscarMeta(userId);
+
+                if(meta == null)
+                    return NotFound();
+
+                return Ok(meta);
+            }
+            catch (ValidationException ex)
+            {
+
+                return BadRequest(new { Erro = ex.Message });
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    new { Erro = "Ocorreu um erro no dashboard.", Detalhes = ex.Message });
+            }
         }
     }
 }

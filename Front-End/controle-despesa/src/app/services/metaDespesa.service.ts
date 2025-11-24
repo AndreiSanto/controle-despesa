@@ -9,15 +9,19 @@ import { Observable } from "rxjs";
 })
 export class MetaDespesaService {
   private apiUrl = `${environment.apiUrl}`;
-  
-    constructor(private httpClient: HttpClient) { }
 
-     cadastro(meta: MetaDespesaDTO): Observable<MetaDespesaDTO> {
-        return this.httpClient.post<MetaDespesaDTO>(`${this.apiUrl}/MetaGasto/Cadastro`, meta);
-      }
+  constructor(private httpClient: HttpClient) { }
 
-       alterar(meta: MetaDespesaDTO): Observable<MetaDespesaDTO> {
-          return this.httpClient.post<MetaDespesaDTO>(`${this.apiUrl}/MetaGasto/Alterar`, meta);
-        }
-  
+  cadastro(meta: MetaDespesaDTO): Observable<MetaDespesaDTO> {
+    return this.httpClient.post<MetaDespesaDTO>(`${this.apiUrl}/MetaGasto/Cadastro`, meta);
+  }
+
+  alterar(meta: MetaDespesaDTO): Observable<MetaDespesaDTO> {
+    return this.httpClient.post<MetaDespesaDTO>(`${this.apiUrl}/MetaGasto/Alterar`, meta);
+  }
+
+  buscarMetaDespesa(): Observable<MetaDespesaDTO> {
+    return this.httpClient.get<MetaDespesaDTO>(`${this.apiUrl}/MetaGasto/BuscarMeta`);
+  }
+
 }

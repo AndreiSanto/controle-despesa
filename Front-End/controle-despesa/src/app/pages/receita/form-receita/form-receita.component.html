@@ -35,21 +35,9 @@
       </div>
     </div>
 
-    <!-- Checkbox Receita Fixa -->
-    <div class="form-check">
-      <input type="checkbox" id="receitaFixa" name="receitaFixa" [disabled]="formType === 'view'"
-        [(ngModel)]="receita.receitaFixa" (change)="onReceitaChange()" />
-      <label for="receitaFixa">Receita Fixa</label>
-    </div>
+  
 
     <button type="submit" class="btn-salvar" [disabled]="formType === 'view'">Cadastrar</button>
   </form>
 </div>
 
-<!-- Modal informativo -->
-<p-dialog header="Informação" [(visible)]="displayModal" [modal]="true" [closable]="true" [dismissableMask]="true">
-  <p>Ao selecionar uma receita fixa, ela será adicionada automaticamente todo mês a partir da data de cadastro.</p>
-  <p-footer>
-    <button type="button" pButton label="Fechar" (click)="fecharModal()"></button>
-  </p-footer>
-</p-dialog>

@@ -2,15 +2,19 @@
     <h2>Listagem de Receitas</h2>
 
     <!-- FILTROS -->
-    <div class="filtros">
+   <div class="filtros">
         <input pInputText type="text" placeholder="Descrição" [(ngModel)]="filtro.descricao" />
-        <p-calendar [(ngModel)]="filtro.dataVencimento" dateFormat="dd/mm/yy"
-            placeholder="Data de vencimento"></p-calendar>
-        <p-dropdown [options]="tiposDespesa" [(ngModel)]="filtro.despesaFixa" placeholder="Tipo" optionLabel="label"
-            optionValue="value">
-        </p-dropdown>
+        <p-calendar [(ngModel)]="filtro.dataCadastroInicial" dateFormat="dd/mm/yy" placeholder="Data Cadastro (Início)">
+        </p-calendar>
+
+        <p-calendar [(ngModel)]="filtro.dataCadastroFinal" dateFormat="dd/mm/yy" placeholder="Data Cadastro (Fim)">
+        </p-calendar>
+
+
 
         <p-button label="Buscar" icon="pi pi-search" (onClick)="buscar()"></p-button>
+        <p-button label="Limpar" icon="pi pi-times" class="p-button-secondary" (onClick)="limpar()">
+        </p-button>
     </div>
 
     <!-- TABELA -->
@@ -33,10 +37,10 @@
         <ng-template pTemplate="body" let-receita>
             <tr>
                 <td>{{ receita.descricao }}</td>
-                <td>{{ receita.valor | currency:'BRL' }}</td>
+                <td>{{ receita.valorReceita | currency:'BRL' }}</td>
                 <td>{{ receita.dataCadastro | date:'dd/MM/yyyy' }}</td>
-                <td>{{ receita.tipoDespesaReceita.nome}}</td>
-                <td>{{ receita.receitaFixa ? 'Sim' : 'Não' }}</td>
+                <td>{{ receita.tipo}}</td>
+                
                 <td class="acoes">
                     <p-button icon="pi pi-eye" class="p-button-rounded p-button-success p-button-sm"
                         (onClick)="visualizar(receita)"></p-button>

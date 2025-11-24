@@ -1,7 +1,7 @@
 export interface ReceitaListaResponse {
   id: number;
   descricao: string;
-  valorDespesa: number;
+  valorReceita: number;
   dataCadastro: Date;
   tipo: string;
 }

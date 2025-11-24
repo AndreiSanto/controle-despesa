@@ -64,7 +64,6 @@ namespace controleDespesa.Application.Service
             await _unitOfWork.Commit();
 
             _cache.Remove("dashboard_cache");
-            _cache.Remove("despesas_recentes");
 
             return despesa;
             
@@ -88,7 +87,6 @@ namespace controleDespesa.Application.Service
             await _unitOfWork.Commit();
 
             _cache.Remove("dashboard_cache");
-            _cache.Remove("despesas_recentes");
 
             return resultado;
         }

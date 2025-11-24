@@ -34,18 +34,22 @@ ListarDespesas(
     params.descricao = filtro.descricao;
 
   if (filtro.dataCadastroInicial)
-    params.dataCadastroInicial = filtro.dataCadastroInicial;
+    params.dataCadastroInicial = this.formatarData(filtro.dataCadastroInicial);
 
   if (filtro.dataCadastroFinal)
-    params.dataCadastroFinal = filtro.dataCadastroFinal;
+    params.dataCadastroFinal = this.formatarData(filtro.dataCadastroFinal);
 
   return this.httpClient.get<PaginacaoResponse<DespesaListaResponse>>(
     `${this.apiUrl}/Despesa/ListarDespesas`,
     { params }
   );
+
+
 }
 
-
+private formatarData(data: any): string {
+  return new Date(data).toISOString().split('T')[0];
+}
 
   ListarCategoriaDespesa(): Observable<TipoDespesaReceitaResponse[]> {
     return this.httpClient.get<TipoDespesaReceitaResponse[]>(`${this.apiUrl}/Despesa/ListarCategoriaDespesa`);

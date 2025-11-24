@@ -43,20 +43,16 @@
       </p-inputNumber>
     </div>
 
-    <!-- Barra de Progresso -->
-    <div class="form-group">
-      <label>Progresso do Gasto</label>
-      <p-progressBar [value]="progresso" [showValue]="true"></p-progressBar>
-      <p *ngIf="progresso >= 100" style="color: red; margin-top: 8px;">
-        ⚠️ Atenção: Você atingiu ou ultrapassou a meta!
-      </p>
-    </div>
+  
 
-    <!-- Botões -->
-    <div style="display: flex; justify-content: space-between;">
-      <button type="button" class="btn-voltar" (click)="voltar()">Voltar</button>
-      <button type="submit" class="btn-salvar">Salvar Meta</button>
-    </div>
+  <div style="display: flex; justify-content: space-between;">
+  <button type="button" class="btn-voltar" (click)="voltar()">Voltar</button>
+
+  <button type="submit" class="btn-salvar">
+    {{ formType === FormTypeEnum.Create ? 'Salvar Meta' : 'Alterar Meta' }}
+  </button>
+</div>
+
   </form>
 </div>
 

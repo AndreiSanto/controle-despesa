@@ -125,5 +125,16 @@ export class ListDespesaComponent implements OnInit {
       }
     });
   }
+  limpar() {
+  this.filtro = {
+    descricao: '',
+    dataCadastroInicial: null,
+    dataCadastroFinal: null
+  };
+
+  this.first = 0; // volta paginação para o início
+  this.loadDespesas(); // recarrega lista sem filtro
+}
+
 
 }

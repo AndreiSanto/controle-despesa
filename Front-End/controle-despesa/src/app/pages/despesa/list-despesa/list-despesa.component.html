@@ -10,9 +10,13 @@
         <p-calendar [(ngModel)]="filtro.dataCadastroFinal" dateFormat="dd/mm/yy" placeholder="Data Cadastro (Fim)">
         </p-calendar>
 
-       
+
 
         <p-button label="Buscar" icon="pi pi-search" (onClick)="buscar()"></p-button>
+
+        <p-button label="Limpar" icon="pi pi-times" class="p-button-secondary" (onClick)="limpar()">
+        </p-button>
+
     </div>
 
     <!-- TABELA -->
@@ -36,8 +40,8 @@
                 <td>{{ despesa.valorDespesa | currency:'BRL' }}</td>
                 <td>{{ despesa.dataCadastro | date:'dd/MM/yyyy' }}</td>
                 <td>{{ despesa.tipo }}</td>
-               
-                
+
+
                 <td class="acoes">
                     <p-button icon="pi pi-eye" class="p-button-rounded p-button-success p-button-sm"
                         (onClick)="visualizar(despesa)"></p-button>
